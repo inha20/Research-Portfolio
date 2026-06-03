@@ -1,94 +1,141 @@
 # Research Portfolio
 
-## About
-
-Computer Engineering student exploring the intersection of:
-
-- Boolean Algebra
-- Karnaugh Maps
-- Visual Pattern Recognition
-- Human Cognition
-- Generative AI
-- AI in Education
-
-This repository serves as the central hub for research planning, project management, publications, and future research activities.
+Exploring structure recognition, human cognition, human-AI collaboration, and AI education through Boolean structures, pattern discovery, and research generation.
 
 ---
 
-## Current Research Projects
+## Research Program
 
-### Karnaugh Map Visual Pattern Analysis
+Current long-term research direction:
 
-Status: Ongoing
+```text
+Structure Recognition Theory
+│
+├─ Boolean Structure Studies
+│  ├─ Paper 1
+│  ├─ Paper 2
+│  └─ Paper 3
+│
+├─ Human Structure Discovery
+├─ Research Worthiness
+├─ Human-AI Collaboration
+├─ AI Education
+└─ Concept Evolution
+```
 
+---
+
+## Research Evolution
+
+```text
+Karnaugh Map Patterns
+↓
+Symmetric Boolean Structures
+↓
+Variable Rearrangement Invariance
+↓
+Structure Recognition Theory
+```
+
+These projects are viewed as stages in a larger research program rather than independent studies.
+
+---
+
+## Research Papers
+
+### Paper 1
 Related Repository:
 - CarnomapMinorThesis
 
-Research Topics:
-- XOR/XNOR checkerboard patterns
-- Visual interpretation of Karnaugh maps
-- Pattern-based learning methods
+Focus:
+- Karnaugh-map visual patterns
+- XOR/XNOR checkerboard structures
+- Pattern-based interpretation methods
 
----
-
-### Variable Rearrangement and Structural Invariance in Karnaugh Maps
-
-Status: Planned
-
-Research Topics:
-- Variable permutation
-- Equivalence classes
-- Structural symmetry
-- Pattern invariance
-
----
-
-### Visual Pattern Analysis of Symmetric Boolean Functions
-
-Status: Ongoing
-
+### Paper 2
 Related Repository:
 - SymmetricBooleanFunctionMinorThesis
 
-Research Topics:
-- Hamming Weight layers
-- Ring patterns
-- Corner patterns
-- XOR/XNOR visual structures
+Focus:
+- Hamming-weight layers
+- Ring structures
+- Symmetric Boolean patterns
+
+### Paper 3
+Related Repository:
+- 3VariableRearrangementInvarianceMinorThesis
+
+Focus:
+- Variable permutations
+- Structural invariance
+- Equivalence classes
+- Symmetry preservation
+
+### Paper 4
+Related Repository:
+- 4StructureRecognitionTheory
+
+Focus:
+- Structure discovery
+- Research worthiness
+- Question generation
+- Concept evolution
 
 ---
 
-## Summer 2026 Research Roadmap
+## Core Concepts
 
-- Complete thesis repositories
-- Organize research figures and source files
-- Build GitHub Pages website
-- Improve Google discoverability
-- Publish research portfolio
-- Start follow-up research papers
-- Utilize GitHub Student Developer Pack
+```text
+Pattern
+↓
+Attention
+↓
+Structure
+↓
+Meaning
+↓
+Question
+↓
+Research
+```
+
+Related concepts:
+
+- Difference
+- Structure Discovery
+- Research Worthiness
+- Concept as Lens
+- Human-AI Collaboration
 
 ---
 
-## Research Interests
+## Future Research
 
-- Logic Design
+- Human vs AI Structure Discovery
+- AI Intuition
+- Research Question Generation
+- Structure Invariance Theory
+- Concept Evolution
+- AI Collaboration Education
+
+---
+
+## About
+
+Research interests:
+
+- Structure Recognition
 - Boolean Functions
 - Karnaugh Maps
-- Pattern Recognition
 - Human Cognition
-- Educational Technology
+- Human-AI Collaboration
+- AI in Education
 - Generative AI
-- Human vs AI Reasoning
+
+This repository serves as the central hub for research planning, project coordination, publications, and future research development.
 
 ---
 
-## Project Management
+## Notes
 
-Research tasks and milestones are managed through:
-
-- GitHub Issues
-- GitHub Projects
-- Research Roadmaps
-
-This repository functions as the central coordination space for ongoing and future research activities.
+Images, diagrams, and research visualizations will be integrated later after figure organization is completed across the thesis repositories.
