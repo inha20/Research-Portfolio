@@ -1,52 +1,101 @@
 # 최종훈 Research Portfolio
 
-Welcome to my research portfolio.
-
-## Research Areas
-
-- Karnaugh Maps
-- Boolean Algebra
-- Visual Pattern Recognition
-- Human Cognition
-- Generative AI
-- AI in Education
+Exploring structure recognition, human cognition, human-AI collaboration, and AI education through Boolean structures and pattern discovery.
 
 ---
 
-## Current Research
+# Research Program
 
-### 1. Karnaugh Map Visual Pattern Analysis
+Current long-term research direction:
 
-Research on visual interpretation methods for Karnaugh maps, including XOR/XNOR checkerboard patterns and pattern-based learning approaches.
+Structure Recognition Theory
 
-### 2. Variable Rearrangement and Structural Invariance
-
-Investigation of why certain Karnaugh map structures remain visually invariant under variable permutations.
-
-### 3. Visual Pattern Analysis of Symmetric Boolean Functions
-
-Analysis of ring, corner, and checkerboard patterns through Hamming Weight structures.
-
----
-
-## Summer 2026 Goals
-
-- Complete thesis repositories
-- Build research website
-- Improve Google discoverability
-- Publish research portfolio
-- Start follow-up research papers
+```text
+Structure Recognition Theory
+│
+├─ Boolean Structure Studies
+│  ├─ Paper 1
+│  ├─ Paper 2
+│  └─ Paper 3
+│
+├─ Human Structure Discovery
+├─ Research Worthiness
+├─ Human-AI Collaboration
+├─ AI Education
+└─ Concept Evolution
+```
 
 ---
 
-## Repositories
+# Research Evolution
+
+```text
+Karnaugh Map Patterns
+↓
+Symmetric Boolean Structures
+↓
+Variable Rearrangement Invariance
+↓
+Structure Recognition Theory
+```
+
+---
+
+# Research Papers
+
+### Paper 1
+Karnaugh Map Visual Pattern Analysis
+
+### Paper 2
+Visual Pattern Analysis of Symmetric Boolean Functions
+
+### Paper 3
+Variable Rearrangement and Structural Invariance
+
+### Paper 4
+Structure Recognition Theory
+
+---
+
+# Core Concepts
+
+```text
+Pattern
+↓
+Attention
+↓
+Structure
+↓
+Meaning
+↓
+Question
+↓
+Research
+```
+
+---
+
+# Future Research
+
+- Human vs AI Structure Discovery
+- AI Intuition
+- Research Question Generation
+- Structure Invariance Theory
+- AI Collaboration Education
+
+---
+
+# GitHub Repositories
 
 - CarnomapMinorThesis
 - SymmetricBooleanFunctionMinorThesis
+- 3VariableRearrangementInvarianceMinorThesis
+- 4StructureRecognitionTheory
 - Research-Portfolio
+- ANTIGRAVITY
 
 ---
 
-## Contact
+# GitHub
 
-GitHub: https://github.com/inha20
+https://github.com/inha20
