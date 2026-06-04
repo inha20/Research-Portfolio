@@ -54,8 +54,6 @@ Focus:
 - Karnaugh-map visual patterns
 - XOR/XNOR checkerboard structures
 - Pattern-based interpretation methods
-- Variable arrangement equivalence classes (D₄ group theory)
-- Educational implications for the generative AI era
 
 ### Paper 2
 
@@ -73,7 +71,7 @@ Focus:
 
 Related Repository:
 
-- [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis)
+- 3VariableRearrangementInvarianceMinorThesis
 
 Focus:
 
@@ -86,7 +84,7 @@ Focus:
 
 Related Repository:
 
-- [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory)
+- 4StructureRecognitionTheory
 
 Focus:
 
