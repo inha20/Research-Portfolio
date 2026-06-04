@@ -10,7 +10,7 @@ Current long-term research direction:
 
 Structure Recognition Theory
 
-```text
+```
 Structure Recognition Theory
 │
 ├─ Boolean Structure Studies
@@ -29,7 +29,7 @@ Structure Recognition Theory
 
 # Research Evolution
 
-```text
+```
 Karnaugh Map Patterns
 ↓
 Symmetric Boolean Structures
@@ -44,22 +44,26 @@ Structure Recognition Theory
 # Research Papers
 
 ### Paper 1
+
 Karnaugh Map Visual Pattern Analysis
 
 ### Paper 2
+
 Visual Pattern Analysis of Symmetric Boolean Functions
 
 ### Paper 3
+
 Variable Rearrangement and Structural Invariance
 
 ### Paper 4
+
 Structure Recognition Theory
 
 ---
 
 # Core Concepts
 
-```text
+```
 Pattern
 ↓
 Attention
@@ -87,15 +91,15 @@ Research
 
 # GitHub Repositories
 
-- CarnomapMinorThesis
-- SymmetricBooleanFunctionMinorThesis
-- 3VariableRearrangementInvarianceMinorThesis
-- 4StructureRecognitionTheory
-- Research-Portfolio
-- ANTIGRAVITY
+- [1KMapStructureInvariance](https://github.com/inha20/1KMapStructureInvariance)
+- [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis)
+- [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis)
+- [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory)
+- [Research-Portfolio](https://github.com/inha20/Research-Portfolio)
+- [ANTIGRAVITY](https://github.com/inha20/ANTIGRAVITY)
 
 ---
 
 # GitHub
 
-https://github.com/inha20
+<https://github.com/inha20>
