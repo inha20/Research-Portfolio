@@ -102,4 +102,4 @@ Research
 
 # GitHub
 
-<https://github.com/inha20>
+https://github.com/inha20
