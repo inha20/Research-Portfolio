@@ -8,7 +8,7 @@ Exploring structure recognition, human cognition, human-AI collaboration, and AI
 
 Current long-term research direction:
 
-```text
+```
 Structure Recognition Theory
 │
 ├─ Boolean Structure Studies
@@ -27,7 +27,7 @@ Structure Recognition Theory
 
 ## Research Evolution
 
-```text
+```
 Karnaugh Map Patterns
 ↓
 Symmetric Boolean Structures
@@ -44,38 +44,52 @@ These projects are viewed as stages in a larger research program rather than ind
 ## Research Papers
 
 ### Paper 1
+
 Related Repository:
-- CarnomapMinorThesis
+
+- [1KMapStructureInvariance](https://github.com/inha20/1KMapStructureInvariance)
 
 Focus:
+
 - Karnaugh-map visual patterns
 - XOR/XNOR checkerboard structures
 - Pattern-based interpretation methods
+- Variable arrangement equivalence classes (D₄ group theory)
+- Educational implications for the generative AI era
 
 ### Paper 2
+
 Related Repository:
-- SymmetricBooleanFunctionMinorThesis
+
+- [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis)
 
 Focus:
+
 - Hamming-weight layers
 - Ring structures
 - Symmetric Boolean patterns
 
 ### Paper 3
+
 Related Repository:
-- 3VariableRearrangementInvarianceMinorThesis
+
+- [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis)
 
 Focus:
+
 - Variable permutations
 - Structural invariance
 - Equivalence classes
 - Symmetry preservation
 
 ### Paper 4
+
 Related Repository:
-- 4StructureRecognitionTheory
+
+- [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory)
 
 Focus:
+
 - Structure discovery
 - Research worthiness
 - Question generation
@@ -85,7 +99,7 @@ Focus:
 
 ## Core Concepts
 
-```text
+```
 Pattern
 ↓
 Attention
