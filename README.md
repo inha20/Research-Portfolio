@@ -16,6 +16,16 @@ Core research-program documents:
 
 These documents record the origin, evolution, current state, and future direction of the research program.
 
+### Official Research Repositories
+
+- Research-Portfolio
+- 1KMapStructureInvariance
+- 2SymmetricBooleanFunctionMinorThesis
+- 3VariableRearrangementInvarianceMinorThesis
+- 4StructureRecognitionTheory
+
+These repositories collectively form the Structure Recognition research program.
+
 ---
 
 ## Research Program
@@ -85,7 +95,7 @@ Focus:
 
 Related Repository:
 
-- 3VariableRearrangementInvarianceMinorThesis
+- [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis)
 
 Focus:
 
@@ -98,7 +108,7 @@ Focus:
 
 Related Repository:
 
-- 4StructureRecognitionTheory
+- [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory)
 
 Focus:
 
