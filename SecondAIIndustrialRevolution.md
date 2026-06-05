@@ -43,3 +43,18 @@ Content Output
 → Physical Action
 
 Research Questions 인간은 언제 AI를 도구가 아닌 협업자로 인식하는가? 파일 수정은 왜 단순 출력보다 강한 행위성을 느끼게 하는가? Physical AI는 이 전환의 연속선상에 있는가? 생성에서 행위로의 전환은 인간-AI 협업에 어떤 변화를 가져오는가? 
+
+AI Collaboration and Agency Branch (2026) 
+
+Physical AI discussions highlighted the possibility of AI acting directly upon the physical world.
+
+This led to observations of OpenClaw-style file access and GitHub-based collaboration, where AI systems could interact with persistent digital objects rather than only generate text.
+
+These observations produced the transition:
+
+Content → File
+
+Output → Edit
+
+which later became formalized as the concept of the Second AI Industrial Revolution.
+
