@@ -4,11 +4,24 @@ Exploring structure recognition, human cognition, human-AI collaboration, and AI
 
 ---
 
+## Research Program Documents
+
+Core research-program documents:
+
+- ResearchTimeline.md
+- ConceptGenealogy.md
+- ResearchLog.md
+- Summer2026Plan.md
+- ResearchProgramMap.md
+
+These documents record the origin, evolution, current state, and future direction of the research program.
+
+---
+
 ## Research Program
 
 Current long-term research direction:
 
-```
 Structure Recognition Theory
 │
 ├─ Boolean Structure Studies
@@ -21,13 +34,15 @@ Structure Recognition Theory
 ├─ Human-AI Collaboration
 ├─ AI Education
 └─ Concept Evolution
-```
+
+For a detailed overview of the research structure, see:
+
+- ResearchProgramMap.md
 
 ---
 
 ## Research Evolution
 
-```
 Karnaugh Map Patterns
 ↓
 Symmetric Boolean Structures
@@ -35,7 +50,6 @@ Symmetric Boolean Structures
 Variable Rearrangement Invariance
 ↓
 Structure Recognition Theory
-```
 
 These projects are viewed as stages in a larger research program rather than independent studies.
 
@@ -97,7 +111,6 @@ Focus:
 
 ## Core Concepts
 
-```
 Pattern
 ↓
 Attention
@@ -109,7 +122,6 @@ Meaning
 Question
 ↓
 Research
-```
 
 Related concepts:
 
@@ -149,5 +161,16 @@ This repository serves as the central hub for research planning, project coordin
 ---
 
 ## Notes
+
+Research development records are maintained in:
+
+- ResearchTimeline.md
+- ConceptGenealogy.md
+- ResearchLog.md
+
+Research planning documents:
+
+- Summer2026Plan.md
+- ResearchProgramMap.md
 
 Images, diagrams, and research visualizations will be integrated later after figure organization is completed across the thesis repositories.
