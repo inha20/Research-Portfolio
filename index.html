@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choi Jonghun — Structure Recognition Research Program</title>
+  <meta name="description" content="Research Portfolio of Choi Jonghun (Inha University). Structure Recognition Research Program: How do humans discover structure, assign meaning, and generate research questions? Four-paper program investigating Karnaugh maps, Boolean functions, and human cognition." />
+  <meta name="keywords" content="structure recognition, Karnaugh map, Boolean function, structural invariance, human-AI collaboration, research generation, concept evolution, symmetric Boolean function, variable rearrangement, Inha University" />
+  <style>
+    :root {
+      --bg: #f5f7ff;
+      --surface: #ffffff;
+      --border: #dde2f0;
+      --text: #1c1e30;
+      --text-sub: #525770;
+      --accent: #2d3b8e;
+      --accent-light: #edf0fc;
+      --accent2: #5a6eb5;
+      --accent3: #7b8fd6;
+      --code-bg: #f0f2fa;
+      --tag-theory: #ede7f6;
+      --tag-theory-text: #4527a0;
+      --tag-empirical: #e3f2fd;
+      --tag-empirical-text: #1565c0;
+      --tag-infra: #e8f5e9;
+      --tag-infra-text: #2e7d32;
+      --tag-new: #fff3e0;
+      --tag-new-text: #e65100;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1e2557;
+      color: #e8eaf6;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.5px; }
+    header .sub { font-size: 1rem; color: #9fa8da; margin-top: .4rem; }
+    header .tagline {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #c5cae9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Nav ── */
+    nav.top-nav {
+      background: #16213e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    nav.top-nav a {
+      color: #90caf9;
+      padding: .75rem 1.35rem;
+      font-size: .88rem;
+      font-weight: 500;
+      transition: background .15s;
+      text-decoration: none;
+    }
+    nav.top-nav a:hover { background: #1a237e; }
+
+    /* ── Layout ── */
+    main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+    section { margin-bottom: 3.5rem; }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 2px solid #c5cae9;
+      padding-bottom: .4rem;
+      margin-bottom: 1.3rem;
+    }
+    p { margin-bottom: .9rem; color: var(--text-sub); }
+
+    /* ── Architecture diagram ── */
+    .arch-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.3rem 1.6rem;
+      font-family: 'Courier New', monospace;
+      font-size: .9rem;
+      color: var(--text);
+      line-height: 2;
+      overflow-x: auto;
+    }
+    .arch-box .layer { font-weight: 700; color: var(--accent); }
+
+    /* ── Repo grid ── */
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1rem;
+    }
+    .repo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: box-shadow .15s, border-color .15s;
+    }
+    .repo-card:hover { box-shadow: 0 4px 18px rgba(45,59,142,.12); border-color: var(--accent); }
+    .repo-card .tag {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      padding: .2rem .55rem;
+      border-radius: 3px;
+      margin-bottom: .65rem;
+    }
+    .tag-empirical { background: var(--tag-empirical); color: var(--tag-empirical-text); }
+    .tag-theory    { background: var(--tag-theory);    color: var(--tag-theory-text); }
+    .tag-infra     { background: var(--tag-infra);     color: var(--tag-infra-text); }
+    .tag-new       { background: var(--tag-new);       color: var(--tag-new-text); }
+    .repo-card h3 { font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: .3rem; }
+    .repo-card h3 a { color: inherit; text-decoration: none; }
+    .repo-card h3 a:hover { text-decoration: underline; }
+    .repo-card p  { font-size: .87rem; color: var(--text-sub); margin-bottom: .35rem; }
+    .repo-card .status { font-size: .77rem; color: #6b7280; font-style: italic; }
+
+    /* ── Concept genealogy ── */
+    .genealogy {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .gen-step {
+      display: flex; gap: 1rem; align-items: flex-start;
+      padding: .35rem 0;
+    }
+    .gen-arrow { color: var(--accent); font-size: 1.1rem; padding-left: .9rem; opacity: .5; }
+    .gen-label { font-weight: 700; color: var(--accent); font-size: .95rem; }
+    .gen-note  { font-size: .85rem; color: var(--text-sub); margin-top: .1rem; }
+
+    /* ── Research map ── */
+    .program-map {
+      background: var(--code-bg);
+      border-radius: 6px;
+      padding: 1.3rem 1.6rem;
+      font-size: .88rem;
+      line-height: 1.9;
+    }
+    .program-map .root { font-weight: 700; color: var(--accent); }
+    .program-map .branch { color: var(--text-sub); }
+    .program-map .leaf { color: var(--text); font-style: italic; }
+
+    /* ── Keywords ── */
+    .keyword-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .keyword-list span {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: .85rem;
+      padding: .25rem .75rem;
+      border-radius: 20px;
+      border: 1px solid #c5cae9;
+    }
+
+    /* ── Phase table ── */
+    .tbl-wrap { overflow-x: auto; margin: 1.2rem 0; }
+    table {
+      border-collapse: collapse; width: 100%;
+      font-size: .87rem;
+    }
+    th { background: var(--accent); color: #fff; padding: .5rem .9rem; text-align: left; font-weight: 600; }
+    td { padding: .45rem .9rem; border: 1px solid var(--border); }
+    tr:nth-child(even) td { background: var(--accent-light); }
+
+    /* ── Footer ── */
+    footer {
+      background: #1e2557;
+      color: #9fa8da;
+      text-align: center;
+      padding: 1.8rem 1.5rem;
+      font-size: .87rem;
+      margin-top: 1rem;
+    }
+    footer a { color: #90caf9; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      nav.top-nav a { padding: .6rem 1rem; font-size: .84rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Choi Jonghun <span style="font-weight:300;font-size:1.2rem">/ 최종훈</span></h1>
+  <p class="sub">Computer Science · Inha University</p>
+  <p class="tagline">"How do humans come to see something new?"</p>
+</header>
+
+<nav class="top-nav">
+  <a href="#program">Research Program</a>
+  <a href="#repositories">Repositories</a>
+  <a href="#genealogy">Concept Genealogy</a>
+  <a href="#phases">Summer 2026</a>
+  <a href="#keywords">Keywords</a>
+  <a href="https://github.com/inha20" target="_blank">GitHub</a>
+  <a href="https://inha20.github.io/" target="_blank">Profile Page</a>
+</nav>
+
+<main>
+
+  <!-- Program Overview -->
+  <section id="program">
+    <h2>Research Program — Structure Recognition</h2>
+    <p>
+      This portfolio is the <strong>program navigation hub</strong> for a unified long-term research program
+      investigating how humans discover structure, assign meaning to it, and generate research questions.
+    </p>
+    <p>
+      The program began with specific Boolean function phenomena observed in Karnaugh maps and has expanded
+      into a broader meta-theoretical framework — Structure Recognition Theory (SRT) — with branches into
+      human-AI collaboration and AI education.
+    </p>
+
+    <br />
+    <div class="arch-box">
+      <span class="layer">Empirical Foundation Layer</span><br />
+      &nbsp;&nbsp;&nbsp;Paper 1 — Karnaugh Map Structure Invariance<br />
+      &nbsp;&nbsp;&nbsp;Paper 2 — Symmetric Boolean Function Visual Patterns<br />
+      &nbsp;&nbsp;&nbsp;Paper 3 — Variable Rearrangement Invariance<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br />
+      <span class="layer">Theoretical Integration Layer</span><br />
+      &nbsp;&nbsp;&nbsp;Paper 4 — Structure Recognition Theory (SRT)<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br />
+      <span class="layer">Application Domains</span><br />
+      &nbsp;&nbsp;&nbsp;Human-AI Collaboration &nbsp;·&nbsp; AI Education &nbsp;·&nbsp; Structure-Based Mathematics
+    </div>
+  </section>
+
+  <!-- Repositories -->
+  <section id="repositories">
+    <h2>Repositories</h2>
+    <div class="repo-grid">
+
+      <div class="repo-card">
+        <span class="tag tag-empirical">Empirical · Paper 1</span>
+        <h3><a href="https://inha20.github.io/1KMapStructureInvariance/" target="_blank">KMap Structure Invariance</a></h3>
+        <p>Visual pattern analysis of 4-variable Karnaugh maps. XOR/XNOR checkerboard structures and structural regularity under Gray code arrangements.</p>
+        <p class="status">Status: Stable &nbsp;·&nbsp; <a href="https://github.com/inha20/1KMapStructureInvariance" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-empirical">Empirical · Paper 2</span>
+        <h3><a href="https://inha20.github.io/2SymmetricBooleanFunctionMinorThesis/" target="_blank">Symmetric Boolean Functions</a></h3>
+        <p>Symmetric Boolean functions visualized through Hamming Weight layers. Ring structures and layer-based pattern interpretation.</p>
+        <p class="status">Status: Stable &nbsp;·&nbsp; <a href="https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-empirical">Empirical · Paper 3</span>
+        <h3><a href="https://inha20.github.io/3VariableRearrangementInvarianceMinorThesis/" target="_blank">Variable Rearrangement Invariance</a></h3>
+        <p>Structural invariance under variable rearrangement. Equivalence classes and symmetry preservation across 24 variable arrangements (S₄ group).</p>
+        <p class="status">Status: Active — figures pending &nbsp;·&nbsp; <a href="https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-theory">Theory · Paper 4</span>
+        <h3><a href="https://inha20.github.io/4StructureRecognitionTheory/" target="_blank">Structure Recognition Theory</a></h3>
+        <p>Meta-theoretical framework explaining how humans detect explanatory significance. Hypotheses H1–H7 on structure discovery and research generation.</p>
+        <p class="status">Status: Active — early-stage framework &nbsp;·&nbsp; <a href="https://github.com/inha20/4StructureRecognitionTheory" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-new">New · Paper 5</span>
+        <h3><a href="https://inha20.github.io/5HumanAIResearchCollaboration/" target="_blank">Human-AI Research Collaboration</a></h3>
+        <p>Methods, observations, and case studies on long-term Human-AI research collaboration. Externalized memory, AI-to-AI handover, and multi-session continuity.</p>
+        <p class="status">Status: Active — collecting cases &nbsp;·&nbsp; <a href="https://github.com/inha20/5HumanAIResearchCollaboration" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-infra">Program Hub</span>
+        <h3><a href="https://inha20.github.io/Research-Portfolio/" target="_blank">Research Portfolio</a></h3>
+        <p>Program navigation hub. Concept genealogy, research timeline, summer planning, and cross-repository links.</p>
+        <p class="status">Status: Active &nbsp;·&nbsp; <a href="https://github.com/inha20/Research-Portfolio" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-infra">AI Workspace</span>
+        <h3><a href="https://inha20.github.io/ANTIGRAVITY/" target="_blank">ANTIGRAVITY</a></h3>
+        <p>AI collaboration workspace maintaining continuity between research sessions. Handover documents, session logs, and operating principles.</p>
+        <p class="status">Status: Monitoring &nbsp;·&nbsp; <a href="https://github.com/inha20/ANTIGRAVITY" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="repo-card">
+        <span class="tag tag-infra">Profile</span>
+        <h3><a href="https://inha20.github.io/" target="_blank">GitHub Profile (inha20)</a></h3>
+        <p>Public entry point to the research program. Research overview, repository grid, and concept genealogy for external visitors.</p>
+        <p class="status">Status: Active &nbsp;·&nbsp; <a href="https://github.com/inha20/inha20" target="_blank">GitHub</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Concept Genealogy -->
+  <section id="genealogy">
+    <h2>Concept Genealogy</h2>
+    <p>
+      The sequence below records the <em>actual historical development</em> of the research program —
+      not a logical reconstruction, but a trace of discovery. Preserving this history is part of the research.
+    </p>
+    <br />
+    <div class="genealogy">
+      <div class="gen-step">
+        <div><span class="gen-label">Pattern</span><br /><span class="gen-note">First observation: XOR/XNOR checkerboard patterns in Karnaugh maps</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Layer Structure</span><br /><span class="gen-note">Discovery: Hamming Weight layers explain symmetric function pattern positions</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Equivalence</span><br /><span class="gen-note">Observation: different variable arrangements can yield structurally identical patterns</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Structural Invariance</span><br /><span class="gen-note">Question: what exactly is preserved across variable rearrangements?</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Structure Recognition Theory</span><br /><span class="gen-note">Meta-question: why do certain structures become research-worthy while others do not?</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Human-AI Collaboration Model</span><br /><span class="gen-note">Observation: humans discover structure; AI expands explanation space — division of cognitive labor</span></div>
+      </div>
+      <div class="gen-arrow">↓</div>
+      <div class="gen-step">
+        <div><span class="gen-label">Future Directions</span><br /><span class="gen-note">AI Collaboration Education · Structure-Based Elementary Mathematics · Formal Publication</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summer 2026 -->
+  <section id="phases">
+    <h2>Summer 2026 Phase Plan</h2>
+    <p>Current phase: <strong>Phase 1 — Repository Stabilization</strong> (completed). Advancing to Phase 3 — GitHub Pages.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Phase</th><th>Scope</th><th>Target</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Phase 1</td><td>Repository stabilization, README updates</td><td>June 5–18</td><td>✅ Complete</td></tr>
+          <tr><td>Phase 2</td><td>Figure standardization (human-created style)</td><td>June 20</td><td>🟡 Partial</td></tr>
+          <tr><td>Phase 3</td><td>GitHub Pages construction — all 8 repositories</td><td>June 21 – July 17</td><td>🟡 In Progress</td></tr>
+          <tr><td>Phase 4</td><td>Repository content improvement</td><td>July 1–21</td><td>⬜ Pending</td></tr>
+          <tr><td>Phase 5</td><td>Search discoverability</td><td>July 14–31</td><td>⬜ Pending</td></tr>
+          <tr><td>Phase 6</td><td>Future projects exploration</td><td>August</td><td>⬜ Pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Keywords -->
+  <section id="keywords">
+    <h2>Keywords</h2>
+    <div class="keyword-list">
+      <span>Karnaugh map</span>
+      <span>Boolean function</span>
+      <span>structural invariance</span>
+      <span>structure recognition</span>
+      <span>symmetric Boolean function</span>
+      <span>variable rearrangement</span>
+      <span>Hamming weight</span>
+      <span>visual pattern analysis</span>
+      <span>human-AI collaboration</span>
+      <span>research question generation</span>
+      <span>XOR/XNOR patterns</span>
+      <span>explanatory significance</span>
+      <span>concept evolution</span>
+      <span>logic design</span>
+      <span>D₄ group theory</span>
+      <span>equivalence classes</span>
+      <span>AI education</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Choi Jonghun (최종훈) · Inha University · Structure Recognition Research Program</p>
+  <p style="margin-top:.5rem">
+    <a href="https://github.com/inha20" target="_blank">GitHub Profile</a>
+    &nbsp;·&nbsp;
+    <a href="https://inha20.github.io/" target="_blank">Personal Research Page</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/inha20/Research-Portfolio" target="_blank">Portfolio Repository</a>
+  </p>
+</footer>
+
+</body>
+</html>
