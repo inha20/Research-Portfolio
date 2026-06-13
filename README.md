@@ -28,13 +28,14 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 | 2SymmetricBooleanFunctionMinorThesis | Phase 1 | 🟡 Reviewing | README updated ✅ |
 | 3VariableRearrangementInvarianceMinorThesis | Phase 1–2 | 🟠 Active | README updated ✅; figures pending |
 | 4StructureRecognitionTheory | Phase 4 | 🟢 Active | README updated ✅; theory continues |
-| **5HumanAIResearchCollaboration** | **Phase 4** | **🟠 Active** | **2026-06-06 편입 ✅**; 이론 압축 필요 |
+| **5HumanAIResearchCollaboration** | **Phase 4** | **🟢 Complete** | **paper.md Session 17 대규모 확장 완료 (v1.2); GitHub Pages 배포 완료** |
+| **6BooleanFunctionSpaceTheory** | **신규** | **⚠️ Active** | **9번째 저장소 (2026-06-12); Branch 8; 번호 충돌 미해결(연구자 직접 결정 필요)** |
 | Research-Portfolio | Phase 1–3 | 🟢 Active | README updated ✅ |
 | ANTIGRAVITY | All | 🔵 Support | README expanded ✅ |
 | inha20 | Phase 1–3 | 🟢 Active | 2026-06-06 편입 ✅; HANDOVER.md 생성 ✅ |
 
 **Architecture:** Architecture B (Empirical Foundation Model) — adopted 2026-06-05  
-**Repositories:** 8개 (Papers 1–5, Research-Portfolio, ANTIGRAVITY, inha20)  
+**Repositories:** 9개 (Papers 1–5, Research-Portfolio, ANTIGRAVITY, inha20, 6BooleanFunctionSpaceTheory)  
 **Current Phase:** Phase 1–4 동시 진행 중  
 **Next Phase:** Phase 2 — Figure Standardization (target: June 20)
 
@@ -62,6 +63,7 @@ These documents record the origin, evolution, current state, and future directio
 - 5HumanAIResearchCollaboration
 - inha20 (GitHub Profile)
 - ANTIGRAVITY (AI Workspace)
+- 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Branch 8)
 
 ---
 
