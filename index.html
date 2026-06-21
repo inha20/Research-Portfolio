@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structure Recognition Research Program | Research Portfolio</title>
+  <meta name="description" content="Research Portfolio for the Structure Recognition Research Program — a long-term investigation into how humans discover structure, assign meaning, and generate research questions. Includes Papers 1–5 on Boolean functions, Karnaugh maps, and Structure Recognition Theory (SRT). Inha University.">
+  <meta name="keywords" content="structure recognition, research portfolio, Karnaugh map, Boolean function, symmetric Boolean function, variable rearrangement invariance, Structure Recognition Theory, SRT, human-AI collaboration, concept evolution, research generation, Inha University">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --surface: #ffffff;
+      --border: #e0ddd8;
+      --text: #1a1a1a;
+      --text-sub: #555;
+      --accent: #2a4d8f;
+      --accent-light: #eef2fa;
+      --accent2: #3d7a6b;
+      --code-bg: #f4f2ee;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .page-wrap { max-width: 880px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+    /* Top Nav */
+    .top-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.93);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+      padding: .6rem 1.5rem;
+      display: flex; align-items: center; gap: 1.2rem;
+      font-family: 'Segoe UI', sans-serif; font-size: .82rem;
+    }
+    .top-nav a { color: var(--accent); text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .top-nav .sep { color: var(--border); }
+
+    /* Hero */
+    .hero { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+    .hero .program-label {
+      font-family: 'Segoe UI', sans-serif; font-size: .8rem;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--accent); margin-bottom: .6rem;
+    }
+    .hero h1 { font-size: 2rem; font-weight: normal; margin-bottom: .5rem; }
+    .hero .subtitle { color: var(--text-sub); font-size: 1.05rem; margin-bottom: 1.2rem; }
+    .hero .core-question {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: .8rem 1.2rem;
+      font-style: italic;
+      font-size: 1.05rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    h2 { font-size: 1.2rem; font-weight: bold; margin: 2.2rem 0 .8rem;
+         border-bottom: 1px solid var(--border); padding-bottom: .3rem; }
+    p { margin-bottom: .9rem; }
+
+    /* Architecture diagram */
+    .arch {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1.2rem 1.5rem;
+      font-family: monospace; font-size: .88rem;
+      line-height: 1.7; margin-bottom: 1.5rem;
+      white-space: pre;
+    }
+
+    /* Repo cards grid */
+    .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .repo-card {
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 1rem 1.2rem; text-decoration: none; color: var(--text);
+      background: var(--surface); transition: border-color .15s, box-shadow .15s;
+    }
+    .repo-card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(42,77,143,.08); }
+    .repo-card .rc-tag {
+      font-family: 'Segoe UI', sans-serif; font-size: .72rem;
+      text-transform: uppercase; letter-spacing: .07em;
+      color: var(--accent); margin-bottom: .25rem;
+    }
+    .repo-card .rc-name { font-size: .95rem; font-weight: bold; margin-bottom: .25rem; }
+    .repo-card .rc-desc { font-family: 'Segoe UI', sans-serif; font-size: .82rem; color: var(--text-sub); }
+
+    /* Tags */
+    .tag-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.2rem; }
+    .tag {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 3px; padding: .15rem .5rem;
+      font-family: monospace; font-size: .8rem; color: var(--text-sub);
+    }
+
+    footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--border);
+             font-family: 'Segoe UI', sans-serif; font-size: .78rem; color: var(--text-sub); }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <strong>Research Portfolio</strong>
+  <span class="sep">|</span>
+  <a href="https://github.com/inha20/Research-Portfolio">GitHub</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/inha20/inha20">inha20 Profile</a>
+</nav>
+
+<div class="page-wrap">
+
+  <header class="hero">
+    <div class="program-label">Structure Recognition Research Program · Program Hub</div>
+    <h1>Research Portfolio</h1>
+    <p class="subtitle">A long-term investigation into how humans discover structure and generate research</p>
+    <div class="core-question">
+      <strong>How do humans come to see something new?</strong>
+    </div>
+  </header>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      This portfolio documents a long-term research program investigating how humans discover structure, assign meaning to it, and generate research questions. Beginning with specific observations of Karnaugh map visual patterns, the program developed through three empirical case studies into a theoretical framework — Structure Recognition Theory (SRT) — addressing the cognitive mechanisms of research generation and human-AI collaborative discovery.
+    </p>
+    <p>
+      The program follows <strong>Architecture B (Empirical Foundation Model)</strong>: three empirical papers ground the theoretical integration in Paper 4, with Paper 5 addressing human-AI collaboration as a methodological meta-layer.
+    </p>
+  </section>
+
+  <section>
+    <h2>Keywords</h2>
+    <div class="tag-row">
+      <span class="tag">structure recognition</span>
+      <span class="tag">Karnaugh map</span>
+      <span class="tag">Boolean function</span>
+      <span class="tag">visual pattern</span>
+      <span class="tag">human-AI collaboration</span>
+      <span class="tag">research generation</span>
+      <span class="tag">concept evolution</span>
+      <span class="tag">symmetric Boolean function</span>
+      <span class="tag">variable rearrangement</span>
+      <span class="tag">structure discovery</span>
+      <span class="tag">explanatory significance</span>
+      <span class="tag">SRT</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Program Architecture</h2>
+    <div class="arch">Empirical Foundation Layer:
+  Paper 1: KMap Structure Invariance
+  Paper 2: Symmetric Boolean Function Patterns
+  Paper 3: Variable Rearrangement Invariance
+           ↓
+Theoretical Integration Layer:
+  Paper 4: Structure Recognition Theory (SRT) — H1–H10, v0.3
+           ↓
+Methodological Layer:
+  Paper 5: Human-AI Research Collaboration
+           ↓
+Application / Extension Domains:
+  Branch 8: Boolean Function Space Theory</div>
+  </section>
+
+  <section>
+    <h2>Repositories</h2>
+    <div class="repo-grid">
+      <a class="repo-card" href="https://github.com/inha20/1KMapStructureInvariance">
+        <div class="rc-tag">Paper 1 · Empirical Case Study</div>
+        <div class="rc-name">1KMapStructureInvariance</div>
+        <div class="rc-desc">Structural invariance of Karnaugh map checkerboard patterns</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis">
+        <div class="rc-tag">Paper 2 · Empirical Case Study</div>
+        <div class="rc-name">2SymmetricBooleanFunctionMinorThesis</div>
+        <div class="rc-desc">Pattern structure of symmetric Boolean functions</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis">
+        <div class="rc-tag">Paper 3 · Empirical Case Study</div>
+        <div class="rc-name">3VariableRearrangementInvarianceMinorThesis</div>
+        <div class="rc-desc">Invariance under variable rearrangement</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/4StructureRecognitionTheory">
+        <div class="rc-tag">Paper 4 · Theoretical Hub</div>
+        <div class="rc-name">4StructureRecognitionTheory</div>
+        <div class="rc-desc">SRT — H1–H10, formal definitions, empirical research designs</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/5HumanAIResearchCollaboration">
+        <div class="rc-tag">Paper 5 · Methodological Study</div>
+        <div class="rc-name">5HumanAIResearchCollaboration</div>
+        <div class="rc-desc">Human-AI collaborative research process documentation</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/6BooleanFunctionSpaceTheory">
+        <div class="rc-tag">Branch 8 · Applied Mathematics</div>
+        <div class="rc-name">6BooleanFunctionSpaceTheory</div>
+        <div class="rc-desc">Gate-generated Boolean function spaces and Post's lattice</div>
+      </a>
+      <a class="repo-card" href="https://github.com/inha20/inha20">
+        <div class="rc-tag">GitHub Profile · Central Hub</div>
+        <div class="rc-name">inha20</div>
+        <div class="rc-desc">Public entry point for the research program</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Structure Recognition Research Program · Choi Jonghun, Inha University</p>
+    <p>Repository: <a href="https://github.com/inha20/Research-Portfolio">github.com/inha20/Research-Portfolio</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
