@@ -26,10 +26,10 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 |---|---|---|---|
 | 1KMapStructureInvariance | Phase 1 | 🟡 Reviewing | README updated ✅ |
 | 2SymmetricBooleanFunctionMinorThesis | Phase 1 | 🟡 Reviewing | README updated ✅ |
-| 3VariableRearrangementInvarianceMinorThesis | Phase 1–2 | 🟠 Active | README updated ✅; figures pending |
+| 3VariableRearrangementInvarianceMinorThesis | Phase 3 | 🟢 Active | README updated ✅; figures pending |
 | 4StructureRecognitionTheory | Phase 4 | 🟢 Active | README updated ✅; theory continues |
 | **5HumanAIResearchCollaboration** | **Phase 4** | **🟢 Complete** | **paper.md Session 17 대규모 확장 완료 (v1.2); GitHub Pages 배포 완료** |
-| **6BooleanFunctionSpaceTheory** | **신규** | **⚠️ Active** | **9번째 저장소 (2026-06-12); Branch 8; 번호 충돌 미해결(연구자 직접 결정 필요)** |
+| **6BooleanFunctionSpaceTheory** | **Branch 8** | **🟢 Active** | **9번째 저장소 (2026-06-12); Branch 8 배정 확정; TODO.md 체제로 파일 단일화 완료** |
 | Research-Portfolio | Phase 1–3 | 🟢 Active | README updated ✅ |
 | ANTIGRAVITY | All | 🔵 Support | README expanded ✅ |
 | inha20 | Phase 1–3 | 🟢 Active | 2026-06-06 편입 ✅; HANDOVER.md 생성 ✅ |
@@ -258,4 +258,4 @@ Images, diagrams, and research visualizations will be integrated later after fig
 ## Author
 
 Choi Jonghun  
-Inha University
+Independent researcher · Graduate of Inha Technical College
