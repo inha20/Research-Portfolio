@@ -43,15 +43,9 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 
 ## Research Program Documents
 
-Core research-program documents:
+Earlier core research-program documents (`ResearchTimeline.md`, `ConceptGenealogy.md`, `ResearchLog.md`, `Summer2026Plan.md`, `ResearchProgramMap.md`) were removed from this repository on 2026-06-20 and remain available in its git history.
 
-- ResearchTimeline.md
-- ConceptGenealogy.md
-- ResearchLog.md
-- Summer2026Plan.md
-- ResearchProgramMap.md
-
-These documents record the origin, evolution, current state, and future direction of the research program.
+The program's current record of its origin, concept genealogy, session history, work queue and repository health is maintained in [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md).
 
 ### Official Research Repositories
 
@@ -86,7 +80,7 @@ Structure Recognition Theory
 
 For a detailed overview of the research structure, see:
 
-- ResearchProgramMap.md
+- [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md) (the former `ResearchProgramMap.md` was removed on 2026-06-20)
 
 ---
 
@@ -224,16 +218,7 @@ This repository serves as the central hub for research planning, project coordin
 
 ## Notes
 
-Research development records are maintained in:
-
-- ResearchTimeline.md
-- ConceptGenealogy.md
-- ResearchLog.md
-
-Research planning documents:
-
-- Summer2026Plan.md
-- ResearchProgramMap.md
+Research development records and planning documents (the five files named under "Research Program Documents") were removed on 2026-06-20; the current record is kept in [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md) (see its Concept Genealogy, Active Queue and Repository Health sections).
 
 Images, diagrams, and research visualizations will be integrated later after figure organization is completed across the thesis repositories.
 
