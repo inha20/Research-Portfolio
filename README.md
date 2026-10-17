@@ -251,7 +251,7 @@ Images, diagrams, and research visualizations will be integrated later after fig
 | [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Paper 5 — Methodological Study |
 | [inha20](https://github.com/inha20/inha20) | GitHub Profile — Public Entry Point |
 
-**Master Handover Document:** [ProjectManagement/MasterHandoverDocument.md](https://github.com/inha20/Research-Portfolio/blob/main/ProjectManagement/MasterHandoverDocument.md)
+**AI 단일 진입점:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
 
 ---
 
