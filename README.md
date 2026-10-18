@@ -12,6 +12,8 @@ Exploring structure recognition, human cognition, human-AI collaboration, and AI
 
 This portfolio documents a long-term research program investigating how humans discover structure, assign meaning to it, and generate research questions. Beginning with specific observations of Karnaugh map visual patterns, the program has developed through three empirical case studies into a theoretical framework — Structure Recognition Theory (SRT) — addressing the cognitive mechanisms of research generation and human-AI collaborative discovery.
 
+Papers 1–6 are archived early research notes (read-only since 2026-10-18). Their content has been consolidated and corrected in the two current standalone papers: Paper 7 (a group-theoretic classification of 4-variable Boolean function spaces on Karnaugh maps) and Paper 8 (a framework proposal on structural thinking and human-AI research collaboration).
+
 ---
 
 ## Keywords
@@ -20,7 +22,7 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 
 ---
 
-## Current Program Status (as of 2026-10-18)
+## Current Program Status (as of 2026-10-19)
 
 | Repository | Phase | Status | Immediate Action |
 |---|---|---|---|
@@ -29,12 +31,14 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 | 3VariableRearrangementInvarianceMinorThesis | Phase 3 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
 | 4StructureRecognitionTheory | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
 | 5HumanAIResearchCollaboration | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
-| 6BooleanFunctionSpaceTheory | Branch 8 | ⚪ Archived | 읽기 전용(2026-10-18). 내용은 7번 논문으로 정리·정정됨 |
+| 6BooleanFunctionSpaceTheory | Phase 1·2·5 | ⚪ Archived | 읽기 전용(2026-10-18). 내용은 7번 논문으로 정리·정정됨 |
 | 7KarnaughGroupClassification | Standalone (Track A) | 🟢 Current | 수학 논문(카르노맵 위의 4변수 부울 함수 공간의 군론적 분류); 정의·증명 보완, PDF 제공 |
 | 8StructuralThinkingAndHumanAICollaboration | Standalone (Track B) | 🟢 Current | 이론 제안 논문(SRT, HARCT)과 n=1 사례; PDF 제공 |
-| Research-Portfolio | Phase 1–3 | 🟢 Active | README updated ✅ |
-| ANTIGRAVITY | All | 🔵 Support | README expanded ✅ |
-| inha20 | Phase 1–3 | 🟢 Active | 2026-06-06 편입 ✅; HANDOVER.md 생성 ✅ |
+| Research-Portfolio | Phase 1–3 | 🔵 Monitoring | 프로그램 허브(README·index.html). 7·8번 논문 기준으로 정리(2026-10-18) |
+| ANTIGRAVITY | All | 🔵 Monitoring | README.md 단일 운영 |
+| inha20 | Phase 1-5 | 🔵 Monitoring | 프로필 저장소(README·index.html·SESSION_START.md·이론 통합본). 7·8번 논문 기준으로 정리(2026-10-18~19) |
+
+*상태 표기: ⚪ Archived = 읽기 전용 보관 · 🟢 Current = 현재 논문 · 🔵 Monitoring = 지원·유지 저장소.*
 
 **Architecture:** Architecture B (Empirical Foundation Model) — adopted 2026-06-05  
 **Repositories:** 11개 (Papers 1–8, Research-Portfolio, ANTIGRAVITY, inha20; Papers 1–6은 보관됨)  
@@ -59,7 +63,7 @@ The program's current record of its origin, concept genealogy, session history, 
 - 5HumanAIResearchCollaboration
 - inha20 (GitHub Profile)
 - ANTIGRAVITY (AI Workspace)
-- 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Branch 8)
+- 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Paper 6, archived)
 - 7KarnaughGroupClassification (Standalone mathematics paper)
 - 8StructuralThinkingAndHumanAICollaboration (Standalone framework proposal)
 
@@ -103,6 +107,8 @@ These projects are viewed as stages in a larger research program rather than ind
 ---
 
 ## Research Papers
+
+Papers 1–6 are archived early research notes (read-only since 2026-10-18); Papers 7 and 8 are the current standalone papers.
 
 ### Paper 1
 
@@ -166,6 +172,43 @@ Focus:
 - Research continuity across sessions
 - Cognitive labor division in collaborative research
 - Repository as cognitive infrastructure
+
+### Paper 6
+
+Related Repository:
+
+- [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory)
+
+Focus:
+
+- Gate-generated Boolean function spaces
+- Post's lattice and clone theory
+- S₄ orbit classification of 4-variable Boolean function spaces
+
+### Paper 7 (current)
+
+Related Repository:
+
+- [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification)
+
+Focus:
+
+- Variable-arrangement classes of 4-variable Karnaugh maps
+- Orbits under S₄ (3,984 in total) and under the signed permutation group B₄ (order 384, 402 orbits)
+- Readable without the earlier papers
+
+### Paper 8 (current)
+
+Related Repository:
+
+- [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration)
+
+Focus:
+
+- Structure Recognition Theory (SRT; hypotheses H1–H10, not yet empirically tested)
+- Human-AI Research Continuity Theory (HARCT)
+- A single-case study (n=1) and educational implications
+- Readable without the earlier papers
 
 ---
 
@@ -238,7 +281,11 @@ Images, diagrams, and research visualizations will be integrated later after fig
 | [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
 | [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
 | [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Paper 5 — Methodological Study |
+| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Paper 6 — Applied Mathematics (archived) |
+| [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification) | Paper 7 — Mathematics (current) |
+| [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | Paper 8 — Theory Proposal (current) |
 | [inha20](https://github.com/inha20/inha20) | GitHub Profile — Public Entry Point |
+| [ANTIGRAVITY](https://github.com/inha20/ANTIGRAVITY) | AI Workspace |
 
 **AI 단일 진입점:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
 
@@ -246,5 +293,5 @@ Images, diagrams, and research visualizations will be integrated later after fig
 
 ## Author
 
-Choi Jonghun  
+Jonghun Choi (최종훈)  
 Independent researcher · Graduate of Inha Technical College

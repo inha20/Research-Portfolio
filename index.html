@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Structure Recognition Research Program | Research Portfolio</title>
-  <meta name="description" content="Independent research portfolio by Jonghun Choi, a graduate of Inha Technical College. A long-term investigation into how humans discover structure, assign meaning, and generate research questions, covering Papers 1–5 and Structure Recognition Theory (SRT)." />
+  <meta name="description" content="Independent research portfolio by Jonghun Choi, a graduate of Inha Technical College. A long-term investigation into how humans discover structure, assign meaning, and generate research questions, covering Papers 1–8 (Papers 1–6 are archived research notes; Papers 7 and 8 are the current papers) and Structure Recognition Theory (SRT)." />
   <meta name="keywords" content="structure recognition, research portfolio, Karnaugh map, Boolean function, symmetric Boolean function, variable rearrangement invariance, Structure Recognition Theory, SRT, human-AI collaboration, concept evolution, research generation, Inha Technical College, Jonghun Choi" />
 
   <!-- Google Fonts: Newsreader (Editorial Serif), Plus Jakarta Sans (Clean UI), JetBrains Mono (Math/Code) -->
@@ -908,7 +908,8 @@
     @media (max-width: 768px) {
       .hero { padding: 3rem 0 2rem; }
       .nav-links { display: none; }
-      .repo-grid { grid-template-columns: 1fr; }
+      .repo-grid { grid-template-columns: minmax(0, 1fr); }
+      .rc-name { overflow-wrap: anywhere; }
       .arch-visualizer { padding: 1.2rem; }
       .epistemological-quote { font-size: 1.2rem; }
     }
@@ -1121,7 +1122,7 @@
       <!-- Quick Metrics Bar -->
       <div class="metrics-grid">
         <div class="metric-card">
-          <div class="metric-num">6</div>
+          <div class="metric-num">8</div>
           <div class="metric-label">Research Papers & Theses</div>
         </div>
         <div class="metric-card">
@@ -1133,7 +1134,7 @@
           <div class="metric-label">Empirical Case Studies</div>
         </div>
         <div class="metric-card">
-          <div class="metric-num">9</div>
+          <div class="metric-num">11</div>
           <div class="metric-label">Interconnected Repositories</div>
         </div>
       </div>
@@ -1152,6 +1153,9 @@
         </p>
         <p>
           The program adheres to <strong>Architecture B (Empirical Foundation Model)</strong>: three empirical papers ground the theoretical integration in Paper 4, with Paper 5 addressing human-AI collaboration as a methodological meta-layer for distributed research continuity.
+        </p>
+        <p>
+          Papers 1–6 are archived early research notes (read-only since 2026-10-18). Their content has been consolidated and corrected in the two current standalone papers: <strong>Paper 7</strong>, a group-theoretic classification of 4-variable Boolean function spaces on Karnaugh maps, and <strong>Paper 8</strong>, a framework proposal on structural thinking and human-AI research collaboration. Each of the two can be read without the earlier papers.
         </p>
       </div>
 
@@ -1266,12 +1270,12 @@
 
             <!-- Layer 4: Mathematical Domain -->
             <div class="arch-layer">
-              <span class="layer-badge extension">Branch 8 · Mathematical Extension</span>
+              <span class="layer-badge extension">Layer 4 · Mathematical Extension</span>
               <div class="layer-title">Boolean Function Space Theory</div>
               <div class="layer-desc">Algebraic characterization and gate-generated sub-spaces.</div>
               <a class="layer-item-card" href="https://github.com/inha20/6BooleanFunctionSpaceTheory" target="_blank" rel="noopener">
                 <div class="layer-item-name">
-                  Branch 8: Function Space Theory
+                  Paper 6: Function Space Theory
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
                 </div>
                 <div class="layer-item-sub">Gate universality & Post's lattice</div>
@@ -1294,7 +1298,7 @@
               </a>
               <a class="layer-item-card" href="https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration" target="_blank" rel="noopener">
                 <div class="layer-item-name">
-                  Track B: AI Era Structural Thinking
+                  Track B: Structural Thinking and Human-AI Collaboration
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
                 </div>
                 <div class="layer-item-sub">SRT + HARCT framework proposal, single-case study, and education (readable without the earlier papers)</div>
@@ -1318,11 +1322,11 @@
 
       <!-- Filter Controls -->
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All Repositories (10)</button>
+        <button class="filter-btn active" data-filter="all">All Repositories (11)</button>
         <button class="filter-btn" data-filter="empirical">Empirical Foundation</button>
         <button class="filter-btn" data-filter="theory">Theory (SRT)</button>
         <button class="filter-btn" data-filter="methodology">Human-AI</button>
-        <button class="filter-btn" data-filter="math">Applied Math</button>
+        <button class="filter-btn" data-filter="math">Mathematics</button>
         <button class="filter-btn" data-filter="hub">Central Hubs</button>
       </div>
 
@@ -1352,7 +1356,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026kmap, title={Structural Invariance of Karnaugh Map Checkerboard Patterns}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026kmap,&#10;  author = {Choi, Jonghun},&#10;  title = {생성형 AI 시대에서 인간 구조적 사고의 교육적 의미: 생성형 AI 언어 생성 구조와 카르노맵 시각적 패턴 해석 사례를 중심으로},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/1KMapStructureInvariance}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1380,7 +1384,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026symmetric, title={Pattern Structure of Symmetric Boolean Functions}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026symmetric,&#10;  author = {Choi, Jonghun},&#10;  title = {카르노맵의 시각적 패턴과 Boolean 공간 구조의 대응 관계 연구},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1408,7 +1412,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026rearrangement, title={Invariance Under Variable Rearrangement in Boolean Functions}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026rearrangement,&#10;  author = {Choi, Jonghun},&#10;  title = {Variable-Rearrangement-Based Interpretation of Karnaugh Map Patterns},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1437,7 +1441,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026srt, title={Structure Recognition Theory: A Cognitive Framework for Research Generation}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026srt,&#10;  author = {Choi, Jonghun},&#10;  title = {Structure Recognition Theory (SRT)},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/4StructureRecognitionTheory}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1466,17 +1470,17 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026harct, title={Human-AI Research Continuity Theory (HARCT)}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026harct,&#10;  author = {Choi, Jonghun},&#10;  title = {Human-AI Research Continuity Theory (HARCT)},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/5HumanAIResearchCollaboration}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
         </article>
 
-        <!-- Branch 8 -->
+        <!-- Paper 6 -->
         <article class="repo-card" data-category="math">
           <div>
             <div class="rc-header">
-              <span class="rc-role-tag">Branch 8 · Applied Mathematics</span>
+              <span class="rc-role-tag">Paper 6 · Applied Mathematics</span>
               <span class="rc-status-pill">Archived</span>
             </div>
             <h3 class="rc-name">6BooleanFunctionSpaceTheory</h3>
@@ -1495,14 +1499,14 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026functionspace, title={Boolean Function Space Theory and Gate Universality}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026boolean,&#10;  author = {Choi, Jonghun},&#10;  title = {Boolean Function Space Theory: Gate-Generated Function Spaces, Karnaugh Map Geometry, and Structural Classification},&#10;  year = {2026},&#10;  url = {https://github.com/inha20/6BooleanFunctionSpaceTheory}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
         </article>
 
         <!-- Paper 7 (Karnaugh Group Classification) -->
-        <article class="repo-card" data-category="theory">
+        <article class="repo-card" data-category="math">
           <div>
             <div class="rc-header">
               <span class="rc-role-tag">Mathematics · Standalone</span>
@@ -1528,7 +1532,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026grouptheory, title={Group-Theoretic Classification of 4-Variable Boolean Function Spaces on Karnaugh Maps}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026grouptheory,&#10;  author       = {Choi, Jonghun},&#10;  title        = {Group-Theoretic Classification of 4-Variable Boolean Function Spaces on Karnaugh Maps},&#10;  howpublished = {Independent Mathematics Research Program Preprint},&#10;  year      = {2026},&#10;  url       = {https://github.com/inha20/7KarnaughGroupClassification}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1561,7 +1565,7 @@
                 GitHub ↗
               </a>
             </div>
-            <button class="copy-cite-btn" data-bibtex="@misc{choi2026structuralthinking, title={Structural Thinking and Human-AI Research Collaboration in the Generative AI Era}, author={Choi, Jonghun}, year={2026}}">
+            <button class="copy-cite-btn" data-bibtex="@misc{choi2026structuralthinking,&#10;  author       = {Choi, Jonghun},&#10;  title        = {Structural Thinking and Human-AI Research Collaboration in the Generative AI Era: A Framework Proposal, a Case Study, and Educational Implications},&#10;  howpublished = {Independent Interdisciplinary Research Program Preprint},&#10;  year      = {2026},&#10;  url       = {https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration}&#10;}">
               <span>📋 Cite</span>
             </button>
           </div>
@@ -1620,6 +1624,31 @@
             <button class="copy-cite-btn" data-bibtex="@misc{choi2026profile, title={Jonghun Choi Academic Profile and Public Entry Point}, author={Choi, Jonghun}, year={2026}}">
               <span>📋 Cite</span>
             </button>
+          </div>
+        </article>
+
+        <!-- ANTIGRAVITY AI Workspace -->
+        <article class="repo-card" data-category="methodology">
+          <div>
+            <div class="rc-header">
+              <span class="rc-role-tag">AI Workspace</span>
+              <span class="rc-status-pill">Monitoring</span>
+            </div>
+            <h3 class="rc-name">ANTIGRAVITY</h3>
+            <p class="rc-desc">
+              AI collaboration workspace of the program: it preserves research context, documents decisions, and keeps work continuous across AI-assisted sessions. It holds operational infrastructure, not research papers.
+            </p>
+            <div class="rc-tags">
+              <span class="rc-tag">#AIWorkspace</span>
+              <span class="rc-tag">#SessionContinuity</span>
+            </div>
+          </div>
+          <div class="rc-footer">
+            <div class="rc-links">
+              <a href="https://github.com/inha20/ANTIGRAVITY" target="_blank" rel="noopener" class="rc-link-btn">
+                GitHub ↗
+              </a>
+            </div>
           </div>
         </article>
 
@@ -1719,7 +1748,7 @@
       <div class="author-card">
         <div class="author-avatar">JC</div>
         <div class="author-info">
-          <h3>Choi Jonghun</h3>
+          <h3>Jonghun Choi (최종훈)</h3>
           <div class="author-title">Independent Researcher · Graduate of Inha Technical College</div>
           <p class="author-bio">
             Conducting independent mathematical and cognitive research at the intersection of Boolean structure analysis, epistemology, and long-term Human-AI scientific collaboration. Author of Structure Recognition Theory (SRT) and the Human-AI Research Continuity framework.
@@ -1744,13 +1773,13 @@
         <a href="https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis">Paper 3</a>
         <a href="https://github.com/inha20/4StructureRecognitionTheory">Paper 4</a>
         <a href="https://github.com/inha20/5HumanAIResearchCollaboration">Paper 5</a>
-        <a href="https://github.com/inha20/6BooleanFunctionSpaceTheory">Branch 8</a>
+        <a href="https://github.com/inha20/6BooleanFunctionSpaceTheory">Paper 6</a>
         <a href="https://github.com/inha20/7KarnaughGroupClassification">Paper 7</a>
         <a href="https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration">Paper 8</a>
         <a href="https://github.com/inha20/inha20">Profile</a>
       </div>
       <div>
-        Structure Recognition Research Program © 2026 Jonghun Choi. Built with academic precision and accessible design.
+        Structure Recognition Research Program © 2026 Jonghun Choi (최종훈). Built with academic precision and accessible design.
       </div>
     </div>
   </footer>
