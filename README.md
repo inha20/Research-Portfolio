@@ -30,8 +30,8 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 | 4StructureRecognitionTheory | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
 | 5HumanAIResearchCollaboration | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
 | 6BooleanFunctionSpaceTheory | Branch 8 | ⚪ Archived | 읽기 전용(2026-10-18). 내용은 7번 논문으로 정리·정정됨 |
-| 7GroupTheoryBooleanUnification | Standalone (Track A) | 🟢 Current | 수학 논문(카르노맵 위의 4변수 부울 함수 공간의 군론적 분류); 정의·증명 보완, PDF 제공 |
-| 8StructuralThinkingInAIEra | Standalone (Track B) | 🟢 Current | 이론 제안 논문(SRT, HARCT)과 n=1 사례; PDF 제공 |
+| 7KarnaughGroupClassification | Standalone (Track A) | 🟢 Current | 수학 논문(카르노맵 위의 4변수 부울 함수 공간의 군론적 분류); 정의·증명 보완, PDF 제공 |
+| 8StructuralThinkingAndHumanAICollaboration | Standalone (Track B) | 🟢 Current | 이론 제안 논문(SRT, HARCT)과 n=1 사례; PDF 제공 |
 | Research-Portfolio | Phase 1–3 | 🟢 Active | README updated ✅ |
 | ANTIGRAVITY | All | 🔵 Support | README expanded ✅ |
 | inha20 | Phase 1–3 | 🟢 Active | 2026-06-06 편입 ✅; HANDOVER.md 생성 ✅ |
@@ -60,8 +60,8 @@ The program's current record of its origin, concept genealogy, session history, 
 - inha20 (GitHub Profile)
 - ANTIGRAVITY (AI Workspace)
 - 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Branch 8)
-- 7GroupTheoryBooleanUnification (Standalone mathematics paper)
-- 8StructuralThinkingInAIEra (Standalone framework proposal)
+- 7KarnaughGroupClassification (Standalone mathematics paper)
+- 8StructuralThinkingAndHumanAICollaboration (Standalone framework proposal)
 
 ---
 
