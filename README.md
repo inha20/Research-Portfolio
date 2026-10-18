@@ -20,24 +20,26 @@ structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI 
 
 ---
 
-## Current Program Status (as of 2026-06-06)
+## Current Program Status (as of 2026-10-18)
 
 | Repository | Phase | Status | Immediate Action |
 |---|---|---|---|
-| 1KMapStructureInvariance | Phase 1 | 🟡 Reviewing | README updated ✅ |
-| 2SymmetricBooleanFunctionMinorThesis | Phase 1 | 🟡 Reviewing | README updated ✅ |
-| 3VariableRearrangementInvarianceMinorThesis | Phase 3 | 🟢 Active | README updated ✅; figures pending |
-| 4StructureRecognitionTheory | Phase 4 | 🟢 Active | README updated ✅; theory continues |
-| **5HumanAIResearchCollaboration** | **Phase 4** | **🟢 Complete** | **paper.md Session 17 대규모 확장 완료 (v1.2); GitHub Pages 배포 완료** |
-| **6BooleanFunctionSpaceTheory** | **Branch 8** | **🟢 Active** | **9번째 저장소 (2026-06-12); Branch 8 배정 확정; TODO.md 체제로 파일 단일화 완료** |
+| 1KMapStructureInvariance | Phase 1 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
+| 2SymmetricBooleanFunctionMinorThesis | Phase 1 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
+| 3VariableRearrangementInvarianceMinorThesis | Phase 3 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
+| 4StructureRecognitionTheory | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
+| 5HumanAIResearchCollaboration | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
+| 6BooleanFunctionSpaceTheory | Branch 8 | ⚪ Archived | 읽기 전용(2026-10-18). 내용은 7번 논문으로 정리·정정됨 |
+| 7GroupTheoryBooleanUnification | Standalone (Track A) | 🟢 Current | 수학 논문(카르노맵 위의 4변수 부울 함수 공간의 군론적 분류); 정의·증명 보완, PDF 제공 |
+| 8StructuralThinkingInAIEra | Standalone (Track B) | 🟢 Current | 이론 제안 논문(SRT, HARCT)과 n=1 사례; PDF 제공 |
 | Research-Portfolio | Phase 1–3 | 🟢 Active | README updated ✅ |
 | ANTIGRAVITY | All | 🔵 Support | README expanded ✅ |
 | inha20 | Phase 1–3 | 🟢 Active | 2026-06-06 편입 ✅; HANDOVER.md 생성 ✅ |
 
 **Architecture:** Architecture B (Empirical Foundation Model) — adopted 2026-06-05  
-**Repositories:** 9개 (Papers 1–5, Research-Portfolio, ANTIGRAVITY, inha20, 6BooleanFunctionSpaceTheory)  
-**Current Phase:** Phase 1–4 동시 진행 중  
-**Next Phase:** Phase 2 — Figure Standardization (target: June 20)
+**Repositories:** 11개 (Papers 1–8, Research-Portfolio, ANTIGRAVITY, inha20; Papers 1–6은 보관됨)  
+**Current Phase:** 독립 논문 7·8번 (1~6번은 보관된 이전 연구 노트)  
+**Next:** 7·8번 논문의 다듬기
 
 ---
 
@@ -58,6 +60,8 @@ The program's current record of its origin, concept genealogy, session history, 
 - inha20 (GitHub Profile)
 - ANTIGRAVITY (AI Workspace)
 - 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Branch 8)
+- 7GroupTheoryBooleanUnification (Standalone mathematics paper)
+- 8StructuralThinkingInAIEra (Standalone framework proposal)
 
 ---
 
