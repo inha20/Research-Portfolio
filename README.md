@@ -293,14 +293,14 @@ Images, diagrams, and research visualizations will be integrated later after fig
 
 ## Other Repositories
 
-The account `inha20` also holds repositories outside this research program: course notes, tools and personal projects (36 repositories in total as of 2026-10-19). They are organized as public [GitHub Lists](https://github.com/inha20?tab=stars) in a folder-like tree. The list names below are shown as they appear on GitHub.
+The account `inha20` also holds repositories outside this research program: course notes, tools and personal projects (35 public repositories as of 2026-10-19). They are organized as public [GitHub Lists](https://github.com/inha20?tab=stars) in a folder-like tree. The list names below are shown as they appear on GitHub.
 
 | Group | Lists |
 |---|---|
 | 연구 (11) | 연구 › 현재 논문 · 연구 › 보관된 연구 노트 · 연구 › 운영·허브 |
 | 도구 (3) | 도구 › 툴킷·시뮬레이터 |
 | 학습 (13) | 학습 › 자료구조 · 학습 › 데이터·DB·시각화 · 학습 › 프로그래밍·언어 · 학습 › AI·구조 교육 콘텐츠 · 학습 › 기타 |
-| 개인 (9) | 개인 › 앱 프로젝트 · 개인 › 글·메모·문서 |
+| 개인 (8) | 개인 › 앱 프로젝트 · 개인 › 글·메모·문서 |
 
 Only the 연구 group belongs to this program. The other groups are independent of it.
 
