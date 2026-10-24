@@ -309,4 +309,4 @@ Only the 연구 group belongs to this program. The other groups are independent 
 ## Author
 
 Jonghun Choi (최종훈)  
-Independent researcher · Graduate of Inha Technical College
+Independent researcher · 2nd-year student at Inha Technical College
