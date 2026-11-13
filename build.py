@@ -90,6 +90,13 @@ def load(include_hidden: bool) -> dict:
         p.setdefault("tags", [])
         p.setdefault("title_ko", "")
         p.setdefault("version", "")
+        p.setdefault("extra_links", [])
+        for link in p["extra_links"]:
+            for key in ("label", "path"):
+                if key not in link:
+                    raise BuildError(f"{label}: an extra_links entry is missing '{key}'")
+        if p["extra_links"] and not p["has_page"]:
+            raise BuildError(f"{label}: extra_links need has_page = true")
     for layer in data["layers"]:
         for pid in layer["papers"]:
             if pid not in seen:
@@ -352,6 +359,8 @@ def paper_card(p: dict, compact: bool = False) -> str:
     if page:
         verb = "Open the page" if compact else "Read the paper"
         links.append(ext_link(page, verb, sr=f"(Paper {p['id']})", arrow="→"))
+        for extra in p["extra_links"]:
+            links.append(ext_link(f"{page}{extra['path']}", extra["label"], sr=f"(Paper {p['id']})", arrow="→"))
     links.append(ext_link(repo, "GitHub", sr=f"repository of Paper {p['id']}"))
     return f"""
       <article class="{cls}" id="paper-{p['id']}">
