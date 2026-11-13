@@ -6,6 +6,8 @@
 #
 # Papers are listed in order. `status` is "current", "in-progress" or "archived".
 # Set `show = false` on a paper to keep it off the page without deleting its entry.
+# Optional per paper: `extra_links = [{ label = "…", path = "lecture/" }]` adds links to the paper's card;
+# `path` is appended to the paper's Pages address.
 
 [site]
 url = "https://inha20.github.io/Research-Portfolio/"
@@ -175,6 +177,7 @@ title_en = "Group-Theoretic Classification of 4-Variable Boolean Function Spaces
 title_ko = "카르노맵 위의 4변수 부울 함수 공간의 군론적 분류"
 summary = "Classifies the 4-variable Boolean function spaces on Karnaugh maps by variable arrangement: S₄ orbits (3,984 in total) and the signed permutation group B₄ of order 384 (402 orbits). Definitions and proofs are in the paper."
 tags = ["group theory", "Burnside's lemma", "symmetric group S₄", "Hamming layers"]
+extra_links = [{ label = "Lecture · 20 short talks (Korean)", path = "lecture/" }]
 
 [[papers]]
 id = 8
