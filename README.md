@@ -1,312 +1,49 @@
 # Research Portfolio
 
-**Structure Recognition Research Program — Program Hub**
+The hub of the **Structure Recognition Research Program** by Jonghun Choi (최종훈), an independent researcher and 2nd-year student at Inha Technical College.
 
 > How do humans come to see something new?
 
-Exploring structure recognition, human cognition, human-AI collaboration, and AI education through Boolean structures, pattern discovery, and research generation.
+**Read it here: <https://inha20.github.io/Research-Portfolio/>**
+
+The page shows the two current papers (7 and 8), how all eight papers fit together, the archived early notes (papers 1–6), the order in which the ideas arrived, and the working documents behind them. Every paper lives in its own repository with its own page. This repository only holds the hub that connects them.
+
+Contact: cjh3cjh@naver.com · GitHub profile: [inha20](https://github.com/inha20)
+
+For AI collaborators, the single entry point is [`SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md) in the `inha20` repository.
 
 ---
 
-## Abstract
+## 관리 메모 (maintainer notes)
 
-This portfolio documents a long-term research program investigating how humans discover structure, assign meaning to it, and generate research questions. Beginning with specific observations of Karnaugh map visual patterns, the program has developed through three empirical case studies into a theoretical framework — Structure Recognition Theory (SRT) — addressing the cognitive mechanisms of research generation and human-AI collaborative discovery.
+이 저장소는 허브 페이지 하나를 만듭니다. 내용은 전부 `program.toml`에 있고, `build.py`가 그 파일에서 `index.html`과 `404.html`을 생성합니다. 손으로 `index.html`을 고치지 마세요. 다음 빌드에서 덮어써집니다.
 
-Papers 1–6 are archived early research notes (read-only since 2026-10-18). Their content has been consolidated and corrected in the two current standalone papers: Paper 7 (a group-theoretic classification of 4-variable Boolean function spaces on Karnaugh maps) and Paper 8 (a framework proposal on structural thinking and human-AI research collaboration).
+### 내용을 바꾸는 순서
 
----
+1. `program.toml`을 고칩니다. 논문 상태·제목·요약, 지도의 층, 개념 계보, 문서 카드, 소개 문구가 모두 이 파일에 있습니다.
+2. `python build.py`를 실행합니다. Python 3.11 이상이 필요하고 표준 라이브러리만 씁니다.
+3. `program.toml`, `index.html`, `404.html`을 함께 커밋합니다. `python build.py --check`는 생성 파일이 최신인지 확인하며, 오래됐으면 종료 코드 1을 돌려줍니다.
 
-## Keywords
+화면을 로컬에서 보려면 이 폴더에서 `python -m http.server`를 실행하고 `http://localhost:8000/`을 엽니다. `index.html`을 `file://`로 직접 열면 Chrome이 글꼴 파일을 막아서 글꼴이 달라 보입니다.
 
-structure recognition, Karnaugh map, Boolean function, visual pattern, human-AI collaboration, research generation, concept evolution, symmetric Boolean function, variable rearrangement, structure discovery
+### 자주 하는 변경
 
----
+- **논문을 숨기기:** 해당 `[[papers]]` 항목에 `show = false`. 숨긴 논문까지 넣어 미리 보려면 `python build.py --include-hidden --out 임시폴더`(`assets/`가 그 폴더 옆에 있어야 합니다).
+- **새 논문 추가:** `[[papers]]`에 항목을 추가하고, 지도에 넣을 층의 `papers` 목록에 번호를 더합니다. 빌드가 빠진 필드와 잘못된 참조를 알려줍니다.
+- **링크 미리보기 이미지(`assets/og.png`) 바꾸기:** `python tools/make_og.py`(Playwright와 Chrome 필요). 문구나 디자인을 바꿀 때만 다시 만듭니다.
 
-## Current Program Status (as of 2026-10-19)
+### 파일
 
-| Repository | Phase | Status | Immediate Action |
-|---|---|---|---|
-| 1KMapStructureInvariance | Phase 1 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
-| 2SymmetricBooleanFunctionMinorThesis | Phase 1 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
-| 3VariableRearrangementInvarianceMinorThesis | Phase 3 | ⚪ Archived | 읽기 전용(2026-10-18). 7·8번 논문으로 정리·정정됨 |
-| 4StructureRecognitionTheory | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
-| 5HumanAIResearchCollaboration | Phase 4 | ⚪ Archived | 읽기 전용(2026-10-18). 이론은 8번 논문으로 정리됨 |
-| 6BooleanFunctionSpaceTheory | Phase 1·2·5 | ⚪ Archived | 읽기 전용(2026-10-18). 내용은 7번 논문으로 정리·정정됨 |
-| 7KarnaughGroupClassification | Standalone (Track A) | 🟢 Current | 수학 논문(카르노맵 위의 4변수 부울 함수 공간의 군론적 분류); 정의·증명 보완, PDF 제공 |
-| 8StructuralThinkingAndHumanAICollaboration | Standalone (Track B) | 🟢 Current | 이론 제안 논문(SRT, HARCT)과 n=1 사례; PDF 제공 |
-| Research-Portfolio | Phase 1–3 | 🔵 Monitoring | 프로그램 허브(README·index.html). 7·8번 논문 기준으로 정리(2026-10-18) |
-| ANTIGRAVITY | All | 🔵 Monitoring | README.md 단일 운영 |
-| inha20 | Phase 1-5 | 🔵 Monitoring | 프로필 저장소(README·index.html·SESSION_START.md·이론 통합본). 7·8번 논문 기준으로 정리(2026-10-18~19) |
-
-*상태 표기: ⚪ Archived = 읽기 전용 보관 · 🟢 Current = 현재 논문 · 🔵 Monitoring = 지원·유지 저장소.*
-
-**Architecture:** Architecture B (Empirical Foundation Model) — adopted 2026-06-05  
-**Repositories:** 11개 (Papers 1–8, Research-Portfolio, ANTIGRAVITY, inha20; Papers 1–6은 보관됨)  
-**Current Phase:** 독립 논문 7·8번 (1~6번은 보관된 이전 연구 노트)  
-**Next:** 7·8번 논문의 다듬기
-
----
-
-## Research Program Documents
-
-Earlier core research-program documents (`ResearchTimeline.md`, `ConceptGenealogy.md`, `ResearchLog.md`, `Summer2026Plan.md`, `ResearchProgramMap.md`) were removed from this repository on 2026-06-20 and remain available in its git history.
-
-The program's current record of its origin, concept genealogy, session history, work queue and repository health is maintained in [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md).
-
-### Official Research Repositories
-
-- Research-Portfolio
-- 1KMapStructureInvariance
-- 2SymmetricBooleanFunctionMinorThesis
-- 3VariableRearrangementInvarianceMinorThesis
-- 4StructureRecognitionTheory
-- 5HumanAIResearchCollaboration
-- inha20 (GitHub Profile)
-- ANTIGRAVITY (AI Workspace)
-- 6BooleanFunctionSpaceTheory (Applied Mathematics Extension — Paper 6, archived)
-- 7KarnaughGroupClassification (Standalone mathematics paper)
-- 8StructuralThinkingAndHumanAICollaboration (Standalone framework proposal)
-
----
-
-## Research Program
-
-Current long-term research direction:
-
-Structure Recognition Theory
-│
-├─ Boolean Structure Studies
-│  ├─ Paper 1
-│  ├─ Paper 2
-│  └─ Paper 3
-│
-├─ Human Structure Discovery
-├─ Research Worthiness
-├─ Human-AI Collaboration
-├─ AI Education
-└─ Concept Evolution
-
-For a detailed overview of the research structure, see:
-
-- [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md) (the former `ResearchProgramMap.md` was removed on 2026-06-20)
-
----
-
-## Research Evolution
-
-Karnaugh Map Patterns
-↓
-Symmetric Boolean Structures
-↓
-Variable Rearrangement Invariance
-↓
-Structure Recognition Theory
-
-These projects are viewed as stages in a larger research program rather than independent studies.
-
----
-
-## Research Papers
-
-Papers 1–6 are archived early research notes (read-only since 2026-10-18); Papers 7 and 8 are the current standalone papers.
-
-### Paper 1
-
-Related Repository:
-
-- [1KMapStructureInvariance](https://github.com/inha20/1KMapStructureInvariance)
-
-Focus:
-
-- Karnaugh-map visual patterns
-- XOR/XNOR checkerboard structures
-- Pattern-based interpretation methods
-
-### Paper 2
-
-Related Repository:
-
-- [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis)
-
-Focus:
-
-- Hamming-weight layers
-- Ring structures
-- Symmetric Boolean patterns
-
-### Paper 3
-
-Related Repository:
-
-- [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis)
-
-Focus:
-
-- Variable permutations
-- Structural invariance
-- Equivalence classes
-- Symmetry preservation
-
-### Paper 4
-
-Related Repository:
-
-- [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory)
-
-Focus:
-
-- Structure discovery
-- Research worthiness
-- Question generation
-- Concept evolution
-
-### Paper 5
-
-Related Repository:
-
-- [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration)
-
-Focus:
-
-- Long-term Human-AI research collaboration
-- Research continuity across sessions
-- Cognitive labor division in collaborative research
-- Repository as cognitive infrastructure
-
-### Paper 6
-
-Related Repository:
-
-- [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory)
-
-Focus:
-
-- Gate-generated Boolean function spaces
-- Post's lattice and clone theory
-- S₄ orbit classification of 4-variable Boolean function spaces
-
-### Paper 7 (current)
-
-Related Repository:
-
-- [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification)
-
-Focus:
-
-- Variable-arrangement classes of 4-variable Karnaugh maps
-- Orbits under S₄ (3,984 in total) and under the signed permutation group B₄ (order 384, 402 orbits)
-- Readable without the earlier papers
-
-### Paper 8 (current)
-
-Related Repository:
-
-- [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration)
-
-Focus:
-
-- Structure Recognition Theory (SRT; hypotheses H1–H10, not yet empirically tested)
-- Human-AI Research Continuity Theory (HARCT)
-- A single-case study (n=1) and educational implications
-- Readable without the earlier papers
-
----
-
-## Core Concepts
-
-Pattern
-↓
-Attention
-↓
-Structure
-↓
-Meaning
-↓
-Question
-↓
-Research
-
-Related concepts:
-
-- Difference
-- Structure Discovery
-- Research Worthiness
-- Concept as Lens
-- Human-AI Collaboration
-
----
-
-## Future Research
-
-- Human vs AI Structure Discovery
-- AI Intuition
-- Research Question Generation
-- Structure Invariance Theory
-- Concept Evolution
-- AI Collaboration Education
-
----
-
-## About
-
-Research interests:
-
-- Structure Recognition
-- Boolean Functions
-- Karnaugh Maps
-- Human Cognition
-- Human-AI Collaboration
-- AI in Education
-- Generative AI
-
-This repository serves as the central hub for research planning, project coordination, publications, and future research development.
-
----
-
-## Notes
-
-Research development records and planning documents (the five files named under "Research Program Documents") were removed on 2026-06-20; the current record is kept in [`inha20/SESSION_START.md`](https://github.com/inha20/inha20/blob/main/SESSION_START.md) (see its Concept Genealogy, Active Queue and Repository Health sections).
-
-Images, diagrams, and research visualizations will be integrated later after figure organization is completed across the thesis repositories.
-
----
-
-## Repository Links
-
-| Repository | Role |
+| 경로 | 역할 |
 |---|---|
-| [Research-Portfolio](https://github.com/inha20/Research-Portfolio) | Program Hub ← You are here |
-| [1KMapStructureInvariance](https://github.com/inha20/1KMapStructureInvariance) | Empirical Case Study 1 |
-| [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis) | Empirical Case Study 2 |
-| [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
-| [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
-| [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Paper 5 — Methodological Study |
-| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Paper 6 — Applied Mathematics (archived) |
-| [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification) | Paper 7 — Mathematics (current) |
-| [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | Paper 8 — Theory Proposal (current) |
-| [inha20](https://github.com/inha20/inha20) | GitHub Profile — Public Entry Point |
-| [ANTIGRAVITY](https://github.com/inha20/ANTIGRAVITY) | AI Workspace |
+| `program.toml` | 허브의 모든 내용 (유일한 편집 대상) |
+| `build.py` | `program.toml`에서 `index.html`·`404.html` 생성, 검증 |
+| `src/site.css`, `src/site.js` | 스타일과 동작. 빌드할 때 `index.html` 안에 포함됩니다 |
+| `assets/` | 글꼴(OFL, 라이선스는 `assets/fonts/LICENSES.txt`), `favicon.svg`, `og.png` |
+| `tools/make_og.py` | `og.png` 생성기 |
+| `docs/` | 2026-10-08 검토 기록 (인계용 내부 문서, 허브에는 연결하지 않음) |
 
-**AI 단일 진입점:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
+### 바꾸지 않는 것
 
----
-
-## Other Repositories
-
-The account `inha20` also holds repositories outside this research program: course notes, tools and personal projects (35 public repositories as of 2026-10-19). They are organized as public [GitHub Lists](https://github.com/inha20?tab=stars) in a folder-like tree. The list names below are shown as they appear on GitHub.
-
-| Group | Lists |
-|---|---|
-| 연구 (11) | 연구 › 현재 논문 · 연구 › 보관된 연구 노트 · 연구 › 운영·허브 |
-| 도구 (3) | 도구 › 툴킷·시뮬레이터 |
-| 학습 (13) | 학습 › 자료구조 · 학습 › 데이터·DB·시각화 · 학습 › 프로그래밍·언어 · 학습 › AI·구조 교육 콘텐츠 · 학습 › 기타 |
-| 개인 (8) | 개인 › 앱 프로젝트 · 개인 › 글·메모·문서 |
-
-Only the 연구 group belongs to this program. The other groups are independent of it.
-
----
-
-## Author
-
-Jonghun Choi (최종훈)  
-Independent researcher · 2nd-year student at Inha Technical College
+- 허브 주소 `https://inha20.github.io/Research-Portfolio/`와 이 저장소 이름. 다른 저장소와 프로필 링크가 이 주소를 가리킵니다.
+- 각 논문 저장소의 이름과 Pages 주소. 허브는 주소만 가리키고, 논문 쪽 구조는 건드리지 않습니다.

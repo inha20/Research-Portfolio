@@ -1,0 +1,291 @@
+# program.toml — the single source of truth for the research hub page.
+#
+# To change the page: edit this file, run `python build.py`, then commit
+# program.toml together with the regenerated index.html.
+# Needs Python 3.11 or newer; nothing else to install.
+#
+# Papers are listed in order. `status` is "current", "in-progress" or "archived".
+# Set `show = false` on a paper to keep it off the page without deleting its entry.
+
+[site]
+url = "https://inha20.github.io/Research-Portfolio/"
+repo = "https://github.com/inha20/Research-Portfolio"
+title = "Structure Recognition Research Program"
+brand = "Structure Recognition"
+description = "Independent research program by Jonghun Choi (최종훈) on how humans discover structure, give it meaning and turn it into research questions. Current work: Papers 7 and 8."
+keywords = [
+  "structure recognition", "Karnaugh map", "Boolean function", "visual pattern analysis",
+  "human-AI collaboration", "research generation", "concept evolution",
+  "symmetric Boolean function", "variable rearrangement", "explanatory significance",
+  "SRT", "Post's lattice",
+]
+
+[person]
+name_en = "Jonghun Choi"
+name_ko = "최종훈"
+role_en = "Independent researcher · 2nd-year student at Inha Technical College"
+role_ko = "독립 연구자 · 인하공업전문대학 2학년 재학"
+email = "cjh3cjh@naver.com"
+github = "https://github.com/inha20"
+github_user = "inha20"
+bio = "Independent researcher and second-year student at Inha Technical College. The work sits between Boolean structure analysis, cognition and long-term human-AI collaboration. Author of Structure Recognition Theory (SRT) and the Human-AI Research Continuity Theory (HARCT)."
+method = "The program is AI-assisted. Humans notice structure and pose the questions; AI connects concepts and widens the space of explanations. That division of labor is itself under study (Papers 5 and 8)."
+interests = [
+  "Structure recognition", "Boolean functions", "Karnaugh maps", "Human cognition",
+  "Human-AI collaboration", "AI in education", "Generative AI",
+]
+
+[program]
+question = "How do humans come to see something new?"
+lead = "A long-term, AI-assisted research program on how people discover structure, give it meaning and turn it into research questions. It starts from patterns on Karnaugh maps and grows into a theory of structure recognition and a study of human-AI research collaboration."
+current_intro = "Two standalone papers. Each one can be read without the earlier ones."
+map_intro = "Observations led to a theory, the theory to a study of the collaboration that produced it, and the mathematics to a standalone classification. Papers 1–6 are archived; Papers 7 and 8 carry the work forward."
+archive_note = "Early research notes, read-only since 2026-10-18. Their content was consolidated and corrected in Papers 7 and 8, so please cite those instead."
+threads = "Exploratory threads without a paper yet: AI collaboration education · structure-based elementary mathematics."
+
+# ---------------------------------------------------------------- layers
+# Used for the program map. `papers` refers to paper ids below.
+
+[[layers]]
+id = "empirical"
+label = "Layer 1 · Empirical foundation"
+title = "Case studies"
+desc = "Concrete observations from Boolean symmetries and visual Karnaugh mappings."
+papers = [1, 2, 3]
+
+[[layers]]
+id = "theory"
+label = "Layer 2 · Theoretical integration"
+title = "Structure Recognition Theory"
+desc = "An exploratory cognitive framework with ten hypotheses (H1–H10). The hypotheses are not yet empirically tested."
+papers = [4]
+
+[[layers]]
+id = "method"
+label = "Layer 3 · Methodological meta-layer"
+title = "Human-AI collaboration"
+desc = "How research stays continuous across long, multi-session work with AI."
+papers = [5]
+
+[[layers]]
+id = "extension"
+label = "Layer 4 · Mathematical extension"
+title = "Boolean function spaces"
+desc = "Orbit classification of gate-generated function spaces."
+papers = [6]
+
+[[layers]]
+id = "synthesis"
+label = "Synthesis · Standalone papers"
+title = "Current papers"
+desc = "Group-theoretic mathematics (Track A) and structural thinking with human-AI research (Track B)."
+papers = [7, 8]
+
+# ---------------------------------------------------------------- papers
+
+[[papers]]
+id = 1
+repo = "1KMapStructureInvariance"
+status = "archived"
+role = "Case study"
+lang = "ko"
+show = true
+short = "KMap Structure Invariance"
+title_en = "Educational Meaning of Human Structural Thinking in the Generative AI Era"
+title_ko = "생성형 AI 시대에서의 인간 구조적 사고의 교육적 의미"
+summary = "Early observational note on how generative AI and humans recognize structure, with the Karnaugh map XOR/XNOR checkerboard as its case. The 4-variable XOR/XNOR picture is the same in all 24 variable arrangements; it changes only with the axis label order."
+tags = ["Karnaugh map", "invariance", "XOR / XNOR"]
+
+[[papers]]
+id = 2
+repo = "2SymmetricBooleanFunctionMinorThesis"
+status = "archived"
+role = "Case study"
+lang = "ko"
+show = true
+short = "Symmetric Boolean Functions"
+title_en = "A Study on the Correspondence Between Visual Patterns of Karnaugh Maps and Boolean Space Structures"
+title_ko = "카르노맵의 시각적 패턴과 Boolean 공간 구조의 대응 관계 연구"
+summary = "Pattern structure analysis of symmetric Boolean functions: Hamming-weight layer invariants and concentric ring representations in geometric function spaces."
+tags = ["symmetric functions", "Hamming weight"]
+
+[[papers]]
+id = 3
+repo = "3VariableRearrangementInvarianceMinorThesis"
+status = "archived"
+role = "Case study"
+lang = "ko"
+show = true
+short = "Variable Rearrangement"
+title_en = "Variable Rearrangement Invariance in Karnaugh Map Patterns"
+title_ko = "카르노맵 패턴의 변수 재배열 기반 해석 — 구조적 불변성 연구"
+summary = "Observational study of how Karnaugh map pictures behave under variable rearrangement. The classification of the 24 arrangements into 3 classes is shown here and proved in Paper 7."
+tags = ["permutation", "equivalence classes"]
+
+[[papers]]
+id = 4
+repo = "4StructureRecognitionTheory"
+status = "archived"
+role = "Theory"
+lang = "en"
+show = true
+version = "v0.3"
+short = "Structure Recognition Theory"
+title_en = "Structure Recognition Theory (SRT)"
+title_ko = ""
+summary = "The core theoretical framework: it synthesizes Papers 1–3 into ten exploratory hypotheses (H1–H10) on how humans recognize structure and turn patterns into research questions."
+tags = ["SRT", "H1–H10", "epistemology"]
+
+[[papers]]
+id = 5
+repo = "5HumanAIResearchCollaboration"
+status = "archived"
+role = "Methodology"
+lang = "en"
+show = true
+version = "v1.2"
+short = "Human–AI Collaboration"
+title_en = "Human-AI Research Continuity Theory: A Unified Framework for Long-term Human-AI Research Collaboration"
+title_ko = ""
+summary = "Human-AI Research Continuity Theory (HARCT). It formulates goal preservation, reconstruction cost and externalized distributed memory in multi-session AI research."
+tags = ["HARCT", "goal preservation", "context transfer"]
+
+[[papers]]
+id = 6
+repo = "6BooleanFunctionSpaceTheory"
+status = "archived"
+role = "Applied mathematics"
+lang = "ko"
+show = true
+short = "Boolean Function Space"
+title_en = "Boolean Function Space and S₄ Group Classification with Connections to Structure Recognition Theory"
+title_ko = "Boolean 함수 공간과 S₄ 군론적 분류 그리고 구조 인식 이론과의 연결"
+summary = "Orbit classification of the affine, monotone and self-dual subspaces of the 4-variable Boolean functions, and gate universality. Superseded by Paper 7."
+tags = ["Post's lattice", "gate universality", "S₄ orbits"]
+
+[[papers]]
+id = 7
+repo = "7KarnaughGroupClassification"
+status = "current"
+role = "Mathematics · Track A"
+lang = "ko"
+show = true
+short = "Karnaugh Group Classification"
+title_en = "Group-Theoretic Classification of 4-Variable Boolean Function Spaces on Karnaugh Maps"
+title_ko = "카르노맵 위의 4변수 부울 함수 공간의 군론적 분류"
+summary = "Classifies the 4-variable Boolean function spaces on Karnaugh maps by variable arrangement: S₄ orbits (3,984 in total) and the signed permutation group B₄ of order 384 (402 orbits). Definitions and proofs are in the paper."
+tags = ["group theory", "Burnside's lemma", "symmetric group S₄", "Hamming layers"]
+
+[[papers]]
+id = 8
+repo = "8StructuralThinkingAndHumanAICollaboration"
+status = "current"
+role = "Theory proposal · Track B"
+lang = "ko"
+show = true
+short = "Structural Thinking and Human-AI Collaboration"
+title_en = "Structural Thinking and Human-AI Research Collaboration in the Generative AI Era: A Framework Proposal, a Case Study, and Educational Implications"
+title_ko = "생성형 AI 시대의 구조적 사고와 인간-AI 연구 협력"
+summary = "A framework proposal: Structure Recognition Theory (SRT; hypotheses H1–H10, not yet empirically tested) and Human-AI Research Continuity Theory (HARCT), with a single-case study and educational implications for the generative AI era."
+tags = ["structural thinking", "SRT", "HARCT", "generative AI"]
+
+# Paper 9 is a follow-up work folder to Paper 7 and has not been reviewed by the author yet.
+# It stays hidden until `show` is set to true.
+[[papers]]
+id = 9
+repo = "9NPNStabilizerTypes"
+status = "in-progress"
+role = "Mathematics · follow-up to Paper 7"
+lang = "ko"
+show = false
+has_page = false
+short = "NPN Stabilizer Types"
+title_en = "NPN stabilizer types of Boolean functions (n ≤ 6)"
+title_ko = ""
+summary = "Notes, data and GAP/Python scripts on the NPN stabilizer types of Boolean functions with up to six variables. A follow-up to Paper 7."
+tags = ["NPN classes", "stabilizers"]
+
+# ---------------------------------------------------------------- genealogy
+# The actual order in which the ideas appeared, not a logical reconstruction.
+
+[[genealogy]]
+title = "Pattern"
+note = "First observation: alternating checkerboard patterns for XOR/XNOR on Karnaugh maps."
+
+[[genealogy]]
+title = "Layer structure"
+note = "Hamming-weight layers govern where the patterns of symmetric functions sit."
+
+[[genealogy]]
+title = "Equivalence and structural invariance"
+note = "Observation: variable rearrangements preserve structural features of the picture across map re-orderings."
+
+[[genealogy]]
+title = "Structure Recognition Theory"
+note = "The meta-question: why do some structures trigger research inquiry while others go unnoticed?"
+
+[[genealogy]]
+title = "Human-AI collaboration model"
+note = "Division of cognitive labor: humans discover structure intuitively; AI systematically widens the space of explanations."
+
+[[genealogy]]
+title = "Boolean function space theory (archived)"
+note = "A former mathematical frontier, now superseded by Paper 7: gate-generated subspaces and Post's lattice."
+
+[[genealogy]]
+title = "Standalone Papers 7 and 8 (current)"
+note = "Group-theoretic classification of 4-variable Boolean function spaces (7) and structural thinking with human-AI research collaboration (8). Each can be read without the earlier papers."
+
+# ---------------------------------------------------------------- documents
+
+[[docs]]
+badge = "AI entry point"
+title = "SESSION_START.md"
+url = "https://github.com/inha20/inha20/blob/main/SESSION_START.md"
+lang = "ko"
+desc = "The single entry point for AI collaborators: program structure, operating principles, work queue and repository health."
+
+[[docs]]
+badge = "Theory"
+title = "StructureRecognitionTheory_Unified.md"
+url = "https://github.com/inha20/inha20/blob/main/StructureRecognitionTheory_Unified.md"
+lang = "ko"
+desc = "Unified summary of SRT: core research questions, definitions 3.1–3.3, hypotheses H1–H10, questions Q1–Q15 and open problems OP-01–09."
+
+[[docs]]
+badge = "Proposal outline"
+title = "HumanAICollaborationProposal_Outline.md"
+url = "https://github.com/inha20/inha20/blob/main/HumanAICollaborationProposal_Outline.md"
+lang = "ko"
+desc = "Outline of a future project where Paper 4 (SRT) meets Paper 5 (HARCT). Draft v0.1 written by an AI collaborator, awaiting the researcher's review."
+
+[[docs]]
+badge = "AI workspace"
+title = "ANTIGRAVITY"
+url = "https://inha20.github.io/ANTIGRAVITY/"
+lang = "ko"
+desc = "The program's AI collaboration workspace: it keeps research context, documents decisions and keeps work continuous across AI-assisted sessions. Operational infrastructure, not research papers."
+
+# ---------------------------------------------------------------- beyond the research
+
+[beyond]
+intro = "Course notes, tools and personal projects live in other repositories of the same account."
+all_url = "https://github.com/inha20?tab=repositories"
+
+[[beyond.repos]]
+repo = "VacationDataStructure"
+title = "Vacation Data Structures"
+lang = "ko"
+desc = "Data-structure study notes with explanations and Python code, kept as weekly files (linked lists, graphs, pathfinding and more). Its sister repository, DataStructureProject2, continues the topic as a book-writing project with C++ examples."
+
+[[beyond.repos]]
+repo = "AILiteracyJournal"
+title = "AI Literacy Journal"
+lang = "ko"
+desc = "Learning journal on AI literacy: notes on a K-MOOC course outline and the author's own discussions with GPT, in fifteen weekly entries and a final reflection."
+
+[[beyond.repos]]
+repo = "StructuralMathematics"
+title = "Structural Mathematics"
+lang = "ko"
+desc = "Study materials that organize mathematics by structure, from elementary arithmetic to high-school topics such as complex numbers and statistical estimation."
