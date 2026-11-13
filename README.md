@@ -31,6 +31,7 @@ For AI collaborators, the single entry point is [`SESSION_START.md`](https://git
 - **논문을 숨기기:** 해당 `[[papers]]` 항목에 `show = false`. 숨긴 논문까지 넣어 미리 보려면 `python build.py --include-hidden --out 임시폴더`(`assets/`가 그 폴더 옆에 있어야 합니다).
 - **새 논문 추가:** `[[papers]]`에 항목을 추가하고, 지도에 넣을 층의 `papers` 목록에 번호를 더합니다. 빌드가 빠진 필드와 잘못된 참조를 알려줍니다.
 - **링크 미리보기 이미지(`assets/og.png`) 바꾸기:** `python tools/make_og.py`(Playwright와 Chrome 필요). 문구나 디자인을 바꿀 때만 다시 만듭니다.
+- **스타일이나 레이아웃을 바꾼 뒤:** `python tools/check_layout.py`(Playwright와 Chrome 필요)가 320~1600px 모든 폭에서 가로 넘침이 없는지 검사합니다. 메뉴가 접히는 폭처럼 두 레이아웃 사이 구간의 문제를 잡기 위한 것입니다.
 
 ### 파일
 
@@ -41,6 +42,7 @@ For AI collaborators, the single entry point is [`SESSION_START.md`](https://git
 | `src/site.css`, `src/site.js` | 스타일과 동작. 빌드할 때 `index.html` 안에 포함됩니다 |
 | `assets/` | 글꼴(OFL, 라이선스는 `assets/fonts/LICENSES.txt`), `favicon.svg`, `og.png` |
 | `tools/make_og.py` | `og.png` 생성기 |
+| `tools/check_layout.py` | 모든 폭에서 가로 넘침 검사 |
 | `docs/` | 2026-10-08 검토 기록 (인계용 내부 문서, 허브에는 연결하지 않음) |
 
 ### 바꾸지 않는 것

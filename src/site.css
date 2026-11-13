@@ -252,6 +252,17 @@ ul,ol{margin:0;padding:0;list-style:none}
 @media (max-width:900px){
   .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+/* The section links fold into a menu before they run out of room (in em, so a larger text size folds them earlier). */
+@media (max-width:58.75em){
+  .menu-btn{display:inline-flex}
+  .nav-links{display:none;position:absolute;top:var(--header-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin:0;padding:8px 24px 16px;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 18px 30px -20px rgba(0,0,0,.5)}
+  .site-header.nav-open .nav-links{display:flex}
+  .nav-links a{padding:14px 8px;font-size:1rem;border-bottom:1px solid var(--border);border-radius:0}
+  .nav-links a:last-child{border-bottom:0}
+  .nav-actions{margin-left:auto;flex:none}
+  .nav-actions .gh-link{display:none}
+  .nav-links .nav-gh{display:block}
+}
 @media (max-width:768px){
   body{font-size:1rem}
   .container{padding:0 18px}
@@ -266,15 +277,8 @@ ul,ol{margin:0;padding:0;list-style:none}
   .card{padding:22px}
   .layer{grid-template-columns:1fr;padding:20px}
   .about-grid{grid-template-columns:1fr;gap:32px}
-  .menu-btn{display:inline-flex}
-  .nav-links{display:none;position:absolute;top:var(--header-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin:0;padding:8px 18px 16px;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 18px 30px -20px rgba(0,0,0,.5)}
-  .site-header.nav-open .nav-links{display:flex}
-  .nav-links a{padding:14px 8px;font-size:1rem;border-bottom:1px solid var(--border);border-radius:0}
-  .nav-links a:last-child{border-bottom:0}
+  .nav-links{padding:8px 18px 16px}
   .nav-inner{gap:8px}
-  .nav-actions{margin-left:auto;flex:none}
-  .nav-actions .gh-link{display:none}
-  .nav-links .nav-gh{display:block}
   .brand{min-width:0;white-space:normal;gap:10px;line-height:1.15}
   .brand small{display:none}
   .archive>summary{padding:18px 20px;flex-wrap:wrap}
