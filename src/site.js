@@ -39,6 +39,22 @@
     });
   }
 
+  /* The two <meta name="theme-color"> tags are matched by the browser against the operating-system setting, so a saved or
+     toggled theme that differs from it left the toolbar in the wrong colour. Both tags get the colour of the theme that is
+     showing, and follow every change. */
+  var CHROME = { dark: '#0d0f17', light: '#fbfbf9' };
+  function chrome() {
+    var color = CHROME[current()];
+    var tags = document.querySelectorAll('meta[name="theme-color"]');
+    for (var j = 0; j < tags.length; j++) {
+      if (tags[j].getAttribute('content') !== color) tags[j].setAttribute('content', color);
+    }
+  }
+  chrome();
+  if (window.MutationObserver) {
+    new MutationObserver(chrome).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+  }
+
   /* ---- mobile menu ---- */
   var header = document.getElementById('site-header');
   var menuBtn = document.getElementById('menu-btn');
